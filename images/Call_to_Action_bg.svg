@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1110" viewBox="0 0 1920 1110">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2375" data-name="Rectangle 2375" width="1920" height="1110" transform="translate(0 2968)" fill="none" stroke="#707070" stroke-width="41"/>
+    </clipPath>
+  </defs>
+  <g id="Call_to_Action_bg" transform="translate(0 -2968)" clip-path="url(#clip-path)">
+    <ellipse id="Ellipse_261" data-name="Ellipse 261" cx="285" cy="263.5" rx="285" ry="263.5" transform="translate(1532 3013)" fill="#fff" opacity="0.05"/>
+    <ellipse id="Ellipse_262" data-name="Ellipse 262" cx="113" cy="105" rx="113" ry="105" transform="translate(1400 3523)" fill="#fff" opacity="0.05"/>
+    <ellipse id="Ellipse_263" data-name="Ellipse 263" cx="119" cy="110" rx="119" ry="110" transform="translate(744 3031)" fill="#fff" opacity="0.05"/>
+    <ellipse id="Ellipse_264" data-name="Ellipse 264" cx="388" cy="359" rx="388" ry="359" transform="translate(-252 2968)" fill="#fff" opacity="0.05"/>
+    <ellipse id="Ellipse_265" data-name="Ellipse 265" cx="207" cy="191.5" rx="207" ry="191.5" transform="translate(612 3523)" fill="#fff" opacity="0.05"/>
+  </g>
+</svg>

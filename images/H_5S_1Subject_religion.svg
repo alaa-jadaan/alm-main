@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" height="141" viewBox="0 0 141 141">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b8965c"/>
+      <stop offset="1" stop-color="#dbb476"/>
+    </linearGradient>
+  </defs>
+  <g id="H_5S_1Subject_religion" transform="translate(-1603 -4672)">
+    <circle id="Ellipse_281" data-name="Ellipse 281" cx="70.5" cy="70.5" r="70.5" transform="translate(1603 4672)" fill="url(#linear-gradient)"/>
+    <g id="Group_1603" data-name="Group 1603" transform="translate(1621.423 4689.829)">
+      <g id="Group_1602" data-name="Group 1602">
+        <path id="Path_4349" data-name="Path 4349" d="M2427.267,4073.239a51.261,51.261,0,1,0,51.26,51.261A51.319,51.319,0,0,0,2427.267,4073.239Zm0,101.088a49.827,49.827,0,1,1,49.827-49.827A49.884,49.884,0,0,1,2427.267,4174.327Z" transform="translate(-2376.006 -4073.239)" fill="#fff" stroke="#fff" stroke-width="1"/>
+        <path id="Path_4350" data-name="Path 4350" d="M2463.974,4149.263a.717.717,0,0,0-.69-.523H2456.7v-18.163l.353-3.924h2.776a2.751,2.751,0,0,0,2.535-3.82l-3.981-9.44a2.744,2.744,0,0,0-2.534-1.682h-40.032a2.745,2.745,0,0,0-2.535,1.682l-3.98,9.44a2.751,2.751,0,0,0,2.535,3.82h2.777l.353,3.924v18.163h-6.582a.718.718,0,0,0-.69.523l-1.139,4.068a.717.717,0,0,0,.689.91h57.175a.717.717,0,0,0,.69-.91Zm-9.086-18.686v18.163h-8.165v-18.163l.353-3.924h7.458Zm-27.771-3.924h7.458l.353,3.924v18.163h-8.165v-18.163Zm9.625,3.924.353-3.924h7.459l.353,3.924v18.163h-8.165Zm-26-5.947a1.3,1.3,0,0,1-.116-1.24l3.98-9.441a1.314,1.314,0,0,1,1.214-.806h40.032a1.316,1.316,0,0,1,1.214.806l3.98,9.441a1.319,1.319,0,0,1-1.215,1.83h-47.992A1.3,1.3,0,0,1,2410.741,4124.63Zm6.042,5.947.354-3.924h7.458l.353,3.924v18.163h-8.165Zm-8.591,22.231.737-2.635h53.81l.738,2.635Z" transform="translate(-2384.656 -4084.141)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
