@@ -26,34 +26,14 @@
 
 <body>
     <nav id="top-nav" class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" width="40" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-link active" href="#">الرئيسية <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">الدورات</a>
-                <a class="nav-link" href="#">المقرأة الإلكترونية</a>
-                <a class="nav-link" href="#">مقالات شاملة</a>
-                <a class="nav-link" href="#">عن ألف لام ميم</a>
-                <a class="nav-link" href="#">تواصل معنا</a>
-            </div>
-            <a href="#" role="button" class="login-link my-2 my-sm-0">تسجيل الدخول</a>
-            <a href="#" role="button" class="register-link btn btn-main my-2 my-sm-0">إنشاء حساب</a>
-        </div>
     </nav>
-
-    <header id="home" class="text-center">
-        <div>
-            <img src="images/Home_text_logo.svg" class="my-5 mw-100" width="500" alt="">
-        </div>
-        <a href="#" role="button" class="start-link btn btn-main">ابــــدأ التعلـــــم</a>
-    </header>
-
-    <main>
+    <main id="main-page">
+        <section id="home" class="text-center">
+            <div>
+                <img src="images/Home_text_logo.svg" class="my-5 mw-100">
+            </div>
+            <a href="#" role="button" class="start-link btn btn-main">ابــــدأ التعلـــــم</a>
+            </section>
         <section id="features" class="text-center">
             <header>
                 <h2>يقدم موقع ألف لام ميم</h2>
@@ -216,14 +196,14 @@
                 <h2>ما يميز موقع ألف لام ميم</h2>
             </header>
 
-            <div class="container">
+            <div class="container mb-5">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="images/H_4S_3icon_Certificate.svg" class="card-img-top" alt="">
+                            <img src="images/H_4S_1icon_Free.svg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">إجازات بالسند المتصل</h5>
-                                <p class="card-text">منح إجازات في الأربعين النووية والقاعدة الجزرية والقرآن الكريم بالسند المتصل ضمن شروط</p>
+                                <h5 class="card-title">خدمة مجانية</h5>
+                                <p class="card-text">تقديم جميع الدورات والخدمات في الموقع مجاناً</p>
                             </div>
                         </div>
                     </div>
@@ -238,19 +218,19 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="images/H_4S_1icon_Free.svg" class="card-img-top" alt="">
+                            <img src="images/H_4S_3icon_Certificate.svg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">خدمة مجانية</h5>
-                                <p class="card-text">تقديم جميع الدورات والخدمات في الموقع مجاناً</p>
+                                <h5 class="card-title">إجازات بالسند المتصل</h5>
+                                <p class="card-text">منح إجازات في الأربعين النووية والقاعدة الجزرية والقرآن الكريم بالسند المتصل ضمن شروط</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="images/H_4S_6icon_Order.svg" class="card-img-top" alt="">
+                            <img src="images/H_4S_4icon_Courses.svg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">نظام متكامل منضبط</h5>
-                                <p class="card-text">نظام وانضباط يرشد الوقت والجهد ويضمن الأمن للمنتسبات</p>
+                                <h5 class="card-title">دورات متميزة</h5>
+                                <p class="card-text">تقديم دورات وكورسات لمعظم العلوم الشرعية وعلوم القرآن الكريم</p>
                             </div>
                         </div>
                     </div>
@@ -265,10 +245,10 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="images/H_4S_4icon_Courses.svg" class="card-img-top" alt="">
+                            <img src="images/H_4S_6icon_Order.svg" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title">دورات متميزة</h5>
-                                <p class="card-text">تقديم دورات وكورسات لمعظم العلوم الشرعية وعلوم القرآن الكريم</p>
+                                <h5 class="card-title">نظام متكامل منضبط</h5>
+                                <p class="card-text">نظام وانضباط يرشد الوقت والجهد ويضمن الأمن للمنتسبات</p>
                             </div>
                         </div>
                     </div>
@@ -378,7 +358,7 @@
             </header>
 
             <div class="container">
-                <div class="row row-cols-3">
+                <div class="row row-cols-1 row-cols-sm-3">
                     <div class="col">
                         <div class="card">
                             <img src="images/H_6S_3icon_Participation.svg" class="card-img-top" alt="">
@@ -473,95 +453,15 @@
 
     </main>
 
-    <footer class="pt-5">
-        <div class="container">
-            <div class="row align-items-start">
-                <div class="col-2 d-none d-md-block">
-                    <a href="#"><img class="mw-100" src="images/FooterLogo.svg" alt=""></a>
-                </div>
-                <div class="col-12 col-md-10 col-lg-10 col-xl-5">
-                    <div class="title">
-                        خريطة الموقع
-                    </div>
-                    <!--
-                    <nav class="nav" dir="rtl">
-                        <a class="nav-link col-3 pl-0" href="#">الرئيسة</a>
-                        <a class="nav-link col-3 pl-0" href="#">الدورات</a>
-                        <a class="nav-link col-3 pl-0" href="#">البحث</a>
-                        <a class="nav-link col-3 pl-0" href="#">الحديث الشريف</a>
-                        <a class="nav-link col-3 pl-0" href="#">اللغة العربية</a>
-                        <a class="nav-link col-3 pl-0" href="#">المقرأة الإلكترونية</a>
-                        <a class="nav-link col-3 pl-0" href="#">تواصل معنا</a>
-                        <a class="nav-link col-3 pl-0" href="#">فقه العبادات</a>
-                        <a class="nav-link col-3 pl-0" href="#">القرآن الكريم وعلومه</a>
-                        <a class="nav-link col-3 pl-0" href="#">السيرة النبوية</a>
-                    </nav>
--->
-                    <nav class="nav">
-                        <div class="row no-gutters m-0 row-cols-3 row-cols-lg-5 row-cols-xl-3">
-                            <div class="col"><a class="nav-link" href="#">الرئيسة</a></div>
-                            <div class="col"><a class="nav-link" href="#">الدورات</a></div>
-                            <div class="col"><a class="nav-link" href="#">البحث</a></div>
-                            <div class="col"><a class="nav-link" href="#">الحديث الشريف</a></div>
-                            <div class="col"><a class="nav-link" href="#">اللغة العربية</a></div>
-                            <div class="col"><a class="nav-link" href="#">المقرأة الإلكترونية</a></div>
-                            <div class="col"><a class="nav-link" href="#">تواصل معنا</a></div>
-                            <div class="col"><a class="nav-link" href="#">فقه العبادات</a></div>
-                            <div class="col"><a class="nav-link" href="#">القرآن الكريم وعلومه</a></div>
-                            <div class="col"><a class="nav-link" href="#">السيرة النبوية</a></div>
-                        </div>
-                    </nav>
-                    <div class="title">
-                        تابعنا على
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6 col-xl-5">
-                    <div class="title">
-                        لديك سؤال؟
-                    </div>
-                    <form id="#">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="الاسم" required>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" required>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea name="subject" class="form-control" rows="6" placeholder="الموضوع"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-main-gradient w-100">إرسال</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div id="copyright" class="py-2 mt-5">
-            <div class="container">
-                <div class="clearfix">
-                    <div class="text-center float-md-right ">
-                        جميع الحقوق محفوظة لمؤسسة ألف لام ميم&copy; 2020
-                    </div>
-                    <div class="text-center float-md-left">
-                        <a href="#">شروط الاستخدام و سياسة الخصوصية</a>
-                        الخاصة بألف لام ميم
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="pt-5"></footer>
     <!-- jQuery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        $(function(){
+            $("#top-nav").load("header.html"); 
+            $("footer").load("footer.html"); 
+        });
+    </script> 
     <!--  bootstrap  -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -586,7 +486,7 @@
         $(document).ready(function() {
             $('.courses-slider').slick({
                 dots: false,
-                infinite: false,
+                infinite: true,
                 rtl: true,
                 speed: 300,
                 slidesToShow: 4,
