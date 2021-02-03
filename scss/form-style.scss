@@ -438,7 +438,8 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/form/Home_Hero_BG%20copy.jpg);
-    padding-top: 38vh;
+//    padding-top: 38vh;
+    padding-top: 50vh;
     padding-bottom: 100px;
     position: relative;
 
@@ -519,6 +520,10 @@ footer {
 
     .name-example {
         color: #c8c8c8;
+        font-size: .9rem;
+        font-family: $fontNotoRegular
+    }
+    .name-note{
         font-size: .9rem;
         font-family: $fontNotoRegular
     }
