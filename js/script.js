@@ -56,11 +56,13 @@ $(function () {
         }
     });
     
-    $('#top-nav .collapse').on('show.bs.collapse', function () {
+//    $('#top-nav .collapse').on('show.bs.collapse', function () {
+        $('body').on('show.bs.collapse', '#top-nav .collapse', function () {
         $("#top-nav").addClass("navbar-dark bg-dark").removeClass("navbar-light");
     });
     
-    $('#top-nav .collapse').on('hidden.bs.collapse', function () {
+//    $('#top-nav .collapse').on('hidden.bs.collapse', function () {
+    $('body').on('hidden.bs.collapse', '#top-nav .collapse', function () {
         $("#top-nav").removeClass("navbar-dark bg-dark").addClass("navbar-light");
     });
     
