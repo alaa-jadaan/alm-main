@@ -698,7 +698,7 @@ footer {
         background-image: url(../images/form/Artboard%2043.png), url(../images/form/Artboard%2044.jpg);
         background-size: auto, cover;
         background-repeat: no-repeat;
-        background-position: top, center;
+        background-position: top , center;
         background-attachment: local;
 
         .page-content-wrapper {
@@ -753,5 +753,8 @@ footer {
         .policies {
             width: 95%;
         }
+    }
+    @media (max-width: 500px) {
+        background-size: contain, cover;
     }
 }
