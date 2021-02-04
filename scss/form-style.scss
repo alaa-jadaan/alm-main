@@ -432,14 +432,19 @@ footer {
 }
 
 #register-page {
-    background-size: cover;
+//    background-size: cover;
+//    background-attachment: fixed;
+//    //    background-position: top left;
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    background-image: url(../images/form/Home_Hero_BG%20copy.jpg);
+    background-size: auto, cover;
     background-attachment: fixed;
-    //    background-position: top left;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/form/Home_Hero_BG%20copy.jpg);
-//    padding-top: 38vh;
-    padding-top: 50vh;
+    background-image: url(../images/form/laptop.svg), url(../images/form/Form-BG.jpg) ;
+    //    padding-top: 38vh;
+    padding-top: 52vh;
     padding-bottom: 100px;
     position: relative;
 
@@ -523,7 +528,8 @@ footer {
         font-size: .9rem;
         font-family: $fontNotoRegular
     }
-    .name-note{
+
+    .name-note {
         font-size: .9rem;
         font-family: $fontNotoRegular
     }
@@ -619,7 +625,7 @@ footer {
         border-radius: 0px;
         font-size: 20px;
         margin-top: 30px;
-//        margin-bottom: 25px;
+        //        margin-bottom: 25px;
         color: #fff
     }
 
@@ -698,22 +704,27 @@ footer {
         }
     }
 
+    @media (min-width: 1920px) {
+        background-image: url(../images/form/laptop.svg), url(../images/form/Form-BG2x.jpg) ;
+    }
     @media (max-width: 991.98px) {
         background-color: #eee;
-        background-image: url(../images/form/Artboard%2043.png), url(../images/form/Artboard%2044.jpg);
-        background-size: auto, cover;
+//        background-image: url(../images/form/Artboard%2043.png), url(../images/form/Artboard%2044.jpg);
+        background-image: url(../images/form/laptop.svg), url(../images/form/phone-bg.png);
+        background-size: auto, 100%;
         background-repeat: no-repeat;
-        background-position: top , center;
-        background-attachment: local;
+        background-position: top, top;
+        background-attachment: auto, fixed;
+        padding-top: 36vh;
 
         .page-content-wrapper {
             width: 100%;
             background-color: transparent
         }
 
-//        .faded-dev {
-//            display: none
-//        }
+        //        .faded-dev {
+        //            display: none
+        //        }
 
         header {
             font-size: 16px;
@@ -731,20 +742,25 @@ footer {
             width: 40px;
         }
 
-        section, header {
+        section,
+        header {
             background-color: #fff;
             padding: 30px;
             padding-top: calc(1rem + 10px);
             padding-bottom: 10px;
             border-radius: 0px;
+            box-shadow: 0 16px 21px rgba(0, 0, 0, 0.05);
         }
-        header{
+
+        header {
             padding-top: 40px;
             padding-bottom: 40px;
-                .title{
-                    font-size: 1.5rem
-                    }
-            .details{
+
+            .title {
+                font-size: 1.5rem
+            }
+
+            .details {
                 font-size: 1rem;
             }
         }
@@ -755,11 +771,16 @@ footer {
             }
         }
 
+        .name-example{
+            display: block
+        }
         .policies {
             width: 95%;
         }
     }
+
     @media (max-width: 500px) {
-        background-size: contain, cover;
+//        background-size: contain, cover;
+//        padding-top: 33vh;
     }
 }
