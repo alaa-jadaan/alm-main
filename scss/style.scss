@@ -241,7 +241,7 @@ body {
 //        color: #fff
 //    }
 //}
-#main-page, maqraa-page{
+#main-page, #maqraa-page{
 section {
     padding: 3rem 0;
 
@@ -292,7 +292,7 @@ section header {
 #main-page {
     #home {
         min-height: calc(100vh - 81px);
-        background-image: url(../images/Home_Hero_illustrationsvg.svg), url(../images/Home_Hero_BGjpg.jpg);
+        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
         background-size: 90%, cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -713,7 +713,7 @@ section header {
     }
 
     #statistics {
-        background-image: url(../images/H_6S_bg.jpg);
+        background-image: url(../images/main/H_6S_bg.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -789,7 +789,7 @@ section header {
 
     #call-to-action {
         background-color: #48315A;
-        background-image: url(../images/Call_to_Action_bg.svg);
+        background-image: url(../images/main/Call_to_Action_bg.svg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -848,7 +848,7 @@ section header {
 
     .accordion-section .panel-default .panel-title a:after {
         content: "";
-        background: url(../images/DownArrow.svg);
+        background: url(../images/main/DownArrow.svg);
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -929,7 +929,7 @@ section header {
 #maqraa-page {
     #home {
         min-height: calc(100vh - 81px);
-        //        background-image: url(../images/maqraa/D-M-Active.png), url(../images/maqraa/D-M-BG.jpg);
+        //        background-image: url(../images/main/maqraa/D-M-Active.png), url(../images/maqraa/D-M-BG.jpg);
         //        background-size: contain, 100%;
         //        background-repeat: no-repeat;
         //        background-position: center 120px, top;
