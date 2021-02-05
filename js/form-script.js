@@ -63,7 +63,10 @@ $(function () {
 //            $("#to-part").html(sum);
 //        }
 //    }
+    
 
+    if($(".maqraa-register-page").length > 0){
+    
     function subjectChange() {
 //        console.log($('#from-part-select').val());
         $("#part-error").addClass("d-none");
@@ -134,7 +137,7 @@ $(function () {
 //            $("#to-part-text").addClass("d-none");
 //        }
 //    });
-
+    }
     //arabic letters validation
     function onlyArabic($field) {
         // Arabic characters fall in the Unicode range 0600 - 06FF
