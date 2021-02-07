@@ -312,7 +312,8 @@ sans-serif;
         margin-bottom: 0;
         color: #393939;
         font-family: $fontNotoRegular;
-        font-size: .9rem
+        font-size: .9rem;
+        line-height: 1.6;
     }
 
     .sumo-select {
@@ -653,11 +654,22 @@ footer {
         margin-bottom: 27px;
         border-top: 2px solid #3C2A4A;
     }
-
+    #success-modal{
+        .title{
+            color: #509863;
+            direction: rtl;
+            font-family: $fontShamelBold
+        }
+        .text{
+            color: #545454;
+            font-family: $fontNotoRegular
+        }
+    }
     #success-modal,
     #error-modal {
         .modal-content {
-            border-radius: 1em
+            border-radius: 0;
+            border-color: #fff
         }
 
         .modal-header {
@@ -673,7 +685,7 @@ footer {
             }
 
             #success-icon {
-                margin-top: -62px;
+                margin-top: -100px;
             }
         }
 
@@ -697,7 +709,7 @@ footer {
             border-radius: 2em;
             color: #3C2A4A;
             background-color: transparent;
-            width: 150px;
+//            width: 150px;
             max-width: 100%;
             font-family: $fontTajawalExtraBold;
             font-size: 20px

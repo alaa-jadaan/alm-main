@@ -428,5 +428,7 @@ $(function () {
         $("#accept").removeAttr("disabled");
         }
     });
+    
+//    $("#success-modal").modal("show");
 
 });

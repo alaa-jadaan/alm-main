@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="129" viewBox="0 0 129 129">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b8965c"/>
+      <stop offset="1" stop-color="#dbb476"/>
+    </linearGradient>
+  </defs>
+  <g id="S2-4-icon" transform="translate(-767 -1351)">
+    <circle id="Ellipse_2787" data-name="Ellipse 2787" cx="64.5" cy="64.5" r="64.5" transform="translate(767 1351)" fill="url(#linear-gradient)"/>
+    <g id="Group_2055" data-name="Group 2055" transform="translate(805.802 1385.075)">
+      <g id="Group_2047" data-name="Group 2047" transform="translate(0 0)">
+        <path id="Path_4993" data-name="Path 4993" d="M-4132.563,3218.431v62.853h23.39l.28-2.46h-21.21v-57.933h38.4v32.964l2.46-3.128v-32.3Z" transform="translate(4132.563 -3218.431)" fill="#fff"/>
+      </g>
+      <g id="Group_2048" data-name="Group 2048" transform="translate(26.288 30.197)">
+        <path id="Path_4994" data-name="Path 4994" d="M-4077.1,3319.28l.884-7.688,21.974-27.9a4.067,4.067,0,0,1,5.7-.678,4.066,4.066,0,0,1,.678,5.7l-21.973,27.9Zm3.248-6.714-.348,3.032,2.866-1.05,21.542-27.355a1.6,1.6,0,0,0-.267-2.25,1.6,1.6,0,0,0-2.25.267Z" transform="translate(4077.1 -3282.142)" fill="#fff"/>
+      </g>
+      <g id="Group_2049" data-name="Group 2049" transform="translate(20.876 13.359)">
+        <rect id="Rectangle_2691" data-name="Rectangle 2691" width="14.565" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2050" data-name="Group 2050" transform="translate(7.868 10.122)">
+        <path id="Path_4995" data-name="Path 4995" d="M-4107.029,3248.72h-8.933v-8.933h8.933Zm-6.473-2.46h4.014v-4.013h-4.014Z" transform="translate(4115.962 -3239.787)" fill="#fff"/>
+      </g>
+      <g id="Group_2051" data-name="Group 2051" transform="translate(20.876 26.96)">
+        <rect id="Rectangle_2692" data-name="Rectangle 2692" width="14.565" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2052" data-name="Group 2052" transform="translate(7.868 23.723)">
+        <path id="Path_4996" data-name="Path 4996" d="M-4107.029,3277.417h-8.933v-8.933h8.933Zm-6.473-2.459h4.014v-4.014h-4.014Z" transform="translate(4115.962 -3268.484)" fill="#fff"/>
+      </g>
+      <g id="Group_2053" data-name="Group 2053" transform="translate(20.876 40.562)">
+        <rect id="Rectangle_2693" data-name="Rectangle 2693" width="10.823" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2054" data-name="Group 2054" transform="translate(7.868 37.325)">
+        <path id="Path_4997" data-name="Path 4997" d="M-4107.029,3306.114h-8.933v-8.933h8.933Zm-6.473-2.459h4.014v-4.014h-4.014Z" transform="translate(4115.962 -3297.181)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

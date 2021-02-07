@@ -136,7 +136,8 @@ body {
     direction: rtl;
     color: rgba(142, 142, 142, 1);
     background-color: #fff;
-    box-shadow: 0 7px 40px rgba(0,0,0, 0.16);
+    box-shadow: 0 7px 40px rgba(0, 0, 0, 0.16);
+    border-bottom: 10px solid #A98C4B;
     //    position: fixed;
     //    z-index: 1;
 
@@ -241,64 +242,70 @@ body {
 //        color: #fff
 //    }
 //}
-#main-page, #maqraa-page{
-section {
-    padding: 3rem 0;
+#main-page,
+#maqraa-page,
+#jazariah-page {
+    section {
+        padding: 3rem 0;
 
-    //    z-index: -2
-}
-
-section header {
-    font-family: $fontShamelBold;
-    margin-bottom: 80px;
-    margin-top: 50px;
-
-    //    position: relative;
-    //    z-index: 10000;
-    h2 {
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        color: #393939;
-        font-size: 2rem
+        //    z-index: -2
     }
 
-    h2::after {
-        content: " ";
-        width: 110%;
-        height: 3px;
-        border-top: 29px solid rgba(162, 162, 162, .3);
-        display: inline-block;
-        position: absolute;
-        left: -5%;
-        bottom: -6px;
-        z-index: -1
-    }
+    section header {
+        font-family: $fontShamelBold;
+        margin-bottom: 80px;
+        margin-top: 50px;
 
-    @media (max-width: 575.98px) {
-        margin-top: 30px;
-
+        //    position: relative;
+        //    z-index: 10000;
         h2 {
-            font-size: 1.4rem
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            color: #393939;
+            font-size: 2rem
         }
 
         h2::after {
-            border-top: 10px solid rgba(162, 162, 162, .3);
-            bottom: 5px;
+            content: " ";
+            width: 110%;
+            height: 3px;
+            border-top: 29px solid rgba(162, 162, 162, .3);
+            display: inline-block;
+            position: absolute;
+            left: -5%;
+            bottom: -6px;
+            z-index: -1
+        }
+
+        @media (max-width: 575.98px) {
+            margin-top: 30px;
+
+            h2 {
+                font-size: 1.4rem
+            }
+
+            h2::after {
+                border-top: 10px solid rgba(162, 162, 162, .3);
+                bottom: 5px;
+            }
         }
     }
 }
-}
+
 #main-page {
     #home {
-        min-height: calc(100vh - 81px);
-        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
-        background-size: 90%, cover;
+//        min-height: calc(100vh - 81px);
+        min-height: 100vh;
+//        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
+        background-image: url(../images/main/Book.png), url(../images/main/bg.jpg);
+        background-size: 1000px, cover;
         background-repeat: no-repeat;
-        background-position: center;
+//        background-position: center -100px, center;
+        background-position: bottom, top;
 
         img {
-            width: 560px
+            width: 300px
         }
 
         .start-link {
@@ -311,18 +318,30 @@ section header {
             //            height: 58px;
             //            line-height: 58px
         }
+        @media (min-width: 1500px) {
+            min-height: calc(100vh - 81px);
+            background-position: bottom, top;
+            img{
+                margin-top: 100px !important
+            }
+        }
+        @media (min-width: 1920px) {
+            background-image: url(../images/main/Book@2x.png), url(../images/main/bg@2x.jpg);
+            min-height: calc(100vh - 81px);
+            background-position: center , top;
+        }
 
         @media (max-width: 991.98px) {
 
             background-size: 100%, cover;
-            background-position: bottom, center;
+            background-position: bottom,top;
 
         }
-
+//
         @media (max-width: 575.98px) {
-
-            background-size: 100% 100%, cover;
-            background-position: bottom, center;
+            background-image: url(../images/main/Book.png), url(../images/main/bgphone-min.jpg);
+            background-size: 100% , 100%;
+            background-position: bottom, top;
 
         }
     }
@@ -340,11 +359,11 @@ section header {
         .card {
             color: #fff;
             border-radius: 0;
-            border-color: transparent;
+            border: 0;
             //        min-height: 465px;
             margin: auto;
             margin-bottom: 40px;
-            transition: .5s;
+            transition: .3s;
             padding-left: 25px;
             padding-right: 25px;
 
@@ -424,12 +443,14 @@ section header {
     }
 
     #reads-card {
-        background: rgba(123, 180, 140, 1);
-        background: linear-gradient(180deg, rgba(123, 180, 140, 1) 0%, rgba(75, 144, 155, 1) 100%);
-        box-shadow: 0 58px 58px rgba(79, 107, 154, 0.22);
-
+//        background: rgba(123, 180, 140, 1);
+//        background: linear-gradient(180deg, rgba(123, 180, 140, 1) 0%, rgba(75, 144, 155, 1) 100%);
+//        box-shadow: 0 58px 58px rgba(79, 107, 154, 0.22);
+        background: transparent linear-gradient(180deg, #C5C5C5 0%, #999999 100%) 0% 0% no-repeat padding-box;
+        
+        box-shadow: 0px 58px 58px #54545438;
         .card-title {
-            color: #B5F391
+            color: #5B5B5B
         }
 
         &:hover {
@@ -494,7 +515,9 @@ section header {
             padding-bottom: .5rem;
             padding-top: .5rem
         }
-
+        a{
+            text-decoration: none
+        }
         .card {
             background: #fff;
             box-shadow: 0 21px 37px rgba(0, 0, 0, 0.16);
@@ -504,9 +527,21 @@ section header {
             width: 95%;
             max-width: 340px;
             text-align: right;
-
+            height: 500px;
+                transition: .3s;
         }
-
+        .card:not(.placeholder-card):hover {
+            transform: translateY(-10px);
+        }
+        .placeholder-img{
+            width: 95%;
+        }
+        .placeholder-card{
+            background: #d4d4d4
+        }
+        .placeholder-img2{
+            margin: auto
+        }
         .card-img-top {
             border-radius: 0
         }
@@ -544,7 +579,10 @@ section header {
         }
 
         .details {
-            height: 140px
+            //3lines
+            //            height: 140px
+            //4 lines
+            height: 160px
         }
 
         .card-text {
@@ -554,21 +592,21 @@ section header {
             overflow-y: hidden;
             color: #878787;
             position: relative;
-            height: 4.5rem;
+            height: 6rem;
             /* exactly three lines */
             line-height: 1.5rem
         }
 
-        .card-text:after {
-            content: "";
-            text-align: right;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 70%;
-            height: 1.5rem;
-            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
-        }
+//        .card-text:after {
+//            content: "";
+//            text-align: right;
+//            position: absolute;
+//            bottom: 0;
+//            left: 0;
+//            width: 70%;
+//            height: 1.5rem;
+//            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+//        }
 
         @media (max-width: 575.98px) {
             .card {
@@ -873,6 +911,7 @@ section header {
 #page-footer {
     text-align: right;
     background-color: #E2E2E2;
+
     .container-fluid {
         max-width: 1512px;
         padding: 0 30px;
@@ -952,7 +991,8 @@ section header {
             width: 100%;
             margin-top: 240px;
         }
-        .register-opened{
+
+        .register-opened {
             margin-top: 260px;
         }
 
@@ -962,14 +1002,15 @@ section header {
             font-size: 1.5rem;
             //            font-size: 1.8vw;
             font-family: $fontShamelBold;
-                        width: 550px;
+            width: 550px;
             max-width: 100%;
-//            width: 35vw;
+            //            width: 35vw;
             margin: auto;
             margin-bottom: 20px
         }
 
-        .register-opened .text2, .register-closed .text2 {
+        .register-opened .text2,
+        .register-closed .text2 {
             color: #878787;
             font-size: 1.5rem;
             //            font-size: 1.2vw;
@@ -1000,25 +1041,32 @@ section header {
             height: 58px;
             line-height: 58px
         }
+
         @media (max-width: 991.98px) {
             background-image: url(../images/maqraa/M-M-BG.jpg);
         }
+
         @media (min-width: 576px) and (max-width: 767.98px) {
+
             .register-opened,
             .register-closed {
                 margin-top: 190px;
             }
+
             .register-opened .text1,
             .register-closed .text1 {
                 width: 400px;
                 margin-bottom: 10px;
                 font-size: 1rem;
             }
-            .register-opened .text2, .register-closed .text2{
+
+            .register-opened .text2,
+            .register-closed .text2 {
                 margin-bottom: 10px;
                 font-size: 1.2rem;
             }
-            .countdown{
+
+            .countdown {
                 font-size: 1.7rem;
             }
         }
@@ -1031,10 +1079,12 @@ section header {
             .for-desktop {
                 display: none
             }
+
             .register-opened,
             .register-closed {
                 margin-top: 200px;
             }
+
             .register-opened .text1,
             .register-closed .text1 {
                 width: 300px
@@ -1045,10 +1095,10 @@ section header {
 
 
     #description {
-        background-image:  url(../images/maqraa/M_3ndS_Road.svg), url(../images/maqraa/M_3ndS_BG%20left%20illustration.svg), url(../images/maqraa/M_3ndS_BG%20right%20illustration.svg), url(../images/maqraa/M_3ndS_BG.svg);
+        background-image: url(../images/maqraa/M_3ndS_Road.svg), url(../images/maqraa/M_3ndS_BG%20left%20illustration.svg), url(../images/maqraa/M_3ndS_BG%20right%20illustration.svg), url(../images/maqraa/M_3ndS_BG.svg);
         background-size: auto;
         background-repeat: no-repeat;
-        background-position: 190px 270px, left, right , top;
+        background-position: 190px 270px, left, right, top;
 
         //        padding-bottom: 0;
         header h2 {
@@ -1209,5 +1259,432 @@ section header {
 
     .card-text {
         margin-top: 15px
+    }
+}
+
+#jazariah-page {
+    #home {
+        min-height: calc(100vh - 81px);
+        background-image: url(../images/jazariah/jazariyeh-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+
+        #faded-div {
+            width: 100%;
+//            height: 520px;
+            height:100%;
+            background-color: #48315a;
+            //            background: linear-gradient(180deg, rgba(72, 49, 90, 0) 0%, rgba(72, 49, 90, 1) 100%);
+            background: transparent linear-gradient(180deg, rgba(72, 49, 90, .0) 0%,rgba(72, 49, 90, .9) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+            position: absolute;
+            bottom: 0;
+            z-index: 0
+        }
+
+        .card {
+            color: #393939;
+            width: 350px;
+            max-width: 100%;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            border-radius: 0;
+            border-color: transparent;
+
+            .btn {
+                margin-bottom: 30px;
+                font-family: $fontShamelBold;
+                font-size: 1.1rem;
+                padding-top: 15px;
+                padding-bottom: 10px
+            }
+        }
+        .course-opened{
+            .btn{
+                background: transparent linear-gradient(98deg, #CCB06F 0%, #A88B4A 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+        .course-closed{
+            .btn{
+                background: transparent linear-gradient(98deg, #A8A8A8 0%, #848484 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+
+        .card-title {
+            font-family: $fontShamelBold;
+            font-size: 1.2rem;
+            margin-bottom: 10px
+        }
+
+        .card-text {
+            color: #878787;
+            font-family: $fontNotoRegular;
+            font-size: .9rem;
+            margin-bottom: 25px
+        }
+
+        .countdown {
+            text-align: center;
+            font-family: $fontShamelBold;
+            font-size: 2rem;
+            margin-bottom: 20px
+        }
+
+        .course-description {
+            color: #fff;
+
+            .title {
+                font-family: $fontShamelBold;
+                font-size: 2rem
+            }
+
+            .text {
+                font-family: $fontNotoBold;
+                font-size: .8rem;
+                line-height: 2.5
+            }
+        }
+
+                @media (max-width: 991.98px) {
+                    background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
+                    background-position:   center;
+                    #faded-div {
+                        height: 100%;
+                    }
+                    .card {
+                        color: #393939;
+                        width: 90%;
+                        margin: auto
+                    }
+                    .course-description{
+                        margin-top: 350px;
+                            margin-bottom: 100px
+                    }
+                }
+        //
+                @media (max-width: 575.98px) {
+                    background-color: #48315a;
+                    background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
+                    background-size: 100%;
+                    background-position: top;
+                    .course-description{
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+        
+                }
+    }
+
+    #course-contents {
+        background-color: #48315A;
+
+        //        .container-fluid {
+        //            padding-right: 3%;
+        //            padding-left: 3%
+        //        }
+
+        header h2 {
+            color: #fff;
+            //            margin-bottom: 100px
+        }
+
+        //        .col {
+        //            padding: 0 7px
+        //        }
+
+        .card {
+            background-color: transparent;
+            border-color: transparent;
+            color: #3C2A4A;
+            border-radius: 0;
+            margin: auto;
+            //            margin-bottom: 70px;
+            //        width: 95%;
+            max-width: 100%;
+            transition: 1s
+        }
+
+        .card-img-top {
+            height: 130px;
+            //            position: absolute;
+            //            left: 0;
+            //            top: -51px;
+        }
+
+        .card-body {
+            margin-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            //            transition: 1s
+        }
+
+        .card-text {
+            font-family: $fontNotoBold;
+            font-size: .8rem;
+            color: #fff
+        }
+
+
+        @media (max-width: 575.98px) {
+            .card{
+                margin-bottom: 30px
+            }
+
+        }
+
+    }
+
+    #goals-conditions {
+        background-color: #EEEEEE;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+        .card {
+            box-shadow: 0px 45px 45px rgba(0, 0, 0, 0.05);
+            padding-top: 30px;
+            padding-bottom: 20px
+        }
+
+        img {
+            //            width: 35px
+            height: 40px;
+            //            max-width: 100%
+        }
+
+        .card-title {
+            color: #3C2A4A;
+            font-family: $fontShamelBold;
+            font-size: 1.2rem;
+            margin-bottom: 0px
+        }
+
+        .card-text {
+            color: #878787;
+            font-family: $fontNotoBold;
+            font-size: .9rem;
+            margin-top: 20px
+        }
+
+        ul {
+            padding-right: 20px
+        }
+
+        li {
+            list-style: disc;
+            margin-bottom: 10px
+        }
+        @media (max-width: 575.98px) {
+            .card-conditions{
+                margin-bottom: 30px
+            }
+
+        }
+    }
+
+
+
+    #curriculum {
+        background: transparent linear-gradient(180deg, #917A68 0%, #C8B173 100%) 0% 0% no-repeat padding-box;
+        padding-bottom: 100px;
+        position: relative;
+        z-index: 1;
+
+        header h2 {
+            color: #fff
+        }
+
+        .colored-div {
+            width: 100%;
+            height: 300px;
+            background-color: #eee;
+            position: absolute;
+            bottom: 0;
+            z-index: 0
+        }
+
+        .card {
+            padding: 50px 60px 50px 30px;
+            width: 700px;
+            max-width: 100%;
+            background-color: #fff;
+            border-radius: 0;
+            border: 0;
+            box-shadow: 0px 16px 21px rgba(0, 0, 0, 0.05);
+            margin: auto;
+            text-align: right
+        }
+
+        .card-body {
+            //            border-right: dashed;
+            padding-bottom: 0;
+            padding-top: 0;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 78%;
+                border-right: dashed;
+                border-color: #3C2A4A;
+                position: absolute;
+                right: 0px;
+                top: 10px
+            }
+        }
+
+        .card-title1 {
+            font-family: $fontShamelBold;
+            font-size: 1.1rem;
+            color: #3C2A4A;
+
+            &::before {
+                content: "1";
+                position: absolute;
+                right: -40px;
+                font-family: $fontShamelBold;
+                color: #3C2A4A
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                -moz-border-radius: 7.5px;
+                -webkit-border-radius: 7.5px;
+                border-radius: 7.5px;
+                background-color: #3C2A4A;
+                position: absolute;
+                right: -11px;
+            }
+        }
+
+        .card-title2 {
+            font-family: $fontShamelBook;
+            font-size: 1.1rem;
+            color: #3C2A4A;
+            margin-top: 15px
+        }
+
+        .card-text {
+            font-family: $fontNotoBold;
+            font-size: .9rem;
+            line-height: 2;
+            color: #393939;
+            width: 90%;
+            margin-left: auto
+        }
+
+        .badge {
+            font-family: $fontNotoBold;
+            font-size: .9rem;
+            background-color: #509863;
+            border-radius: 0;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            width: 150px;
+            max-width: 100%
+        }
+
+        .unit {
+            margin-bottom: 45px;
+
+            &:nth-of-type(2) {
+                .card-title1 {
+                    &::before {
+                        content: "2";
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                .card-title1 {
+                    &::before {
+                        content: "3";
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                .card-title1 {
+                    &::before {
+                        content: "4";
+                    }
+                }
+            }
+        }
+    }
+
+    #gain {
+        background-color: #48315A;
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 20px;
+
+        .card {
+            background-color: transparent;
+            border: 0
+        }
+
+        .card-title {
+            font-family: $fontShamelBold;
+            font-size: 1.1rem;
+        }
+
+        .card-text {
+            font-family: $fontNotoBold;
+            font-size: .9rem;
+            margin-top: 20px
+        }
+
+        ul {
+            padding-right: 20px;
+            margin-bottom: 55px
+        }
+
+        li {
+            list-style: disc;
+            margin-bottom: 10px
+        }
+
+        .btn {
+            font-family: $fontShamelBold;
+            font-size: 1.1rem;
+            padding-top: 15px;
+            padding-bottom: 10px
+        }
+
+        .image-wrapper {
+            position: relative
+        }
+
+        .certificate-img {
+//            max-width: 100%;
+            margin: auto;
+            position: absolute;
+            bottom: -289px;
+            left: -156px;
+            z-index: 3
+        }
+        @media (max-width: 991.98px) {
+            padding-bottom: 0;
+            .card-body{
+                padding-bottom: 0
+            }
+            .certificate-img {
+                max-width: 100%;
+                position: relative;
+                bottom: auto;
+                left: auto
+            }
+        }
+        //
+        @media (max-width: 575.98px) {
+
+
+        }
     }
 }

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="129" viewBox="0 0 129 129">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b8965c"/>
+      <stop offset="1" stop-color="#dbb476"/>
+    </linearGradient>
+  </defs>
+  <g id="S2-1-icon" transform="translate(-1533 -1351)">
+    <circle id="Ellipse_2790" data-name="Ellipse 2790" cx="64.5" cy="64.5" r="64.5" transform="translate(1533 1351)" fill="url(#linear-gradient)"/>
+    <g id="Group_2046" data-name="Group 2046" transform="translate(1569.769 1378.59)">
+      <g id="Group_2038" data-name="Group 2038" transform="translate(0 9.659)">
+        <path id="Path_4991" data-name="Path 4991" d="M-3857.958,3287.978h-43.315v-62.852h43.315Zm-40.856-2.459h38.4v-57.933h-38.4Z" transform="translate(3901.274 -3225.126)" fill="#fff"/>
+      </g>
+      <g id="Group_2039" data-name="Group 2039" transform="translate(12.148)">
+        <path id="Path_4992" data-name="Path 4992" d="M-3832.329,3267.6h-14.608v-50.738h-28.708v-12.119h43.315Zm-12.148-2.459h9.688v-57.938h-38.4v7.2h28.708Z" transform="translate(3875.644 -3204.746)" fill="#fff"/>
+      </g>
+      <g id="Group_2040" data-name="Group 2040" transform="translate(9.602 22.403)">
+        <rect id="Rectangle_2685" data-name="Rectangle 2685" width="23.847" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2041" data-name="Group 2041" transform="translate(9.602 29.543)">
+        <rect id="Rectangle_2686" data-name="Rectangle 2686" width="21.16" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2042" data-name="Group 2042" transform="translate(9.602 36.683)">
+        <rect id="Rectangle_2687" data-name="Rectangle 2687" width="23.847" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2043" data-name="Group 2043" transform="translate(9.602 43.823)">
+        <rect id="Rectangle_2688" data-name="Rectangle 2688" width="17.13" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2044" data-name="Group 2044" transform="translate(9.602 50.963)">
+        <rect id="Rectangle_2689" data-name="Rectangle 2689" width="23.847" height="2.46" fill="#fff"/>
+      </g>
+      <g id="Group_2045" data-name="Group 2045" transform="translate(9.602 58.103)">
+        <rect id="Rectangle_2690" data-name="Rectangle 2690" width="21.16" height="2.46" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

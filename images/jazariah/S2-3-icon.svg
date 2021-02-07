@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="129" viewBox="0 0 129 129">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b8965c"/>
+      <stop offset="1" stop-color="#dbb476"/>
+    </linearGradient>
+  </defs>
+  <g id="S2-3-icon" transform="translate(-1022 -1351)">
+    <circle id="Ellipse_2788" data-name="Ellipse 2788" cx="64.5" cy="64.5" r="64.5" transform="translate(1022 1351)" fill="url(#linear-gradient)"/>
+    <g id="Group_2033" data-name="Group 2033" transform="translate(213.334 2.149)">
+      <path id="Path_4985" data-name="Path 4985" d="M-5101.517,3307.587h90.165V3267.2h-90.165Zm2.891-37.5h84.383v34.6h-84.383Z" transform="translate(5933.018 -1874.043)" fill="#fff"/>
+      <path id="Path_4986" data-name="Path 4986" d="M-5076.465,3306.771l20.519-11.847-20.519-11.846Zm2.728-18.969,12.335,7.122-12.335,7.122Z" transform="translate(5921.135 -1881.574)" fill="#fff"/>
+      <rect id="Rectangle_2678" data-name="Rectangle 2678" width="2.728" height="17.075" transform="translate(871.049 1404.813)" fill="#fff"/>
+      <rect id="Rectangle_2679" data-name="Rectangle 2679" width="2.728" height="5.155" transform="translate(876.672 1410.773)" fill="#fff"/>
+      <rect id="Rectangle_2680" data-name="Rectangle 2680" width="2.728" height="11.115" transform="translate(882.295 1407.793)" fill="#fff"/>
+      <rect id="Rectangle_2681" data-name="Rectangle 2681" width="2.728" height="25.236" transform="translate(887.918 1400.732)" fill="#fff"/>
+      <rect id="Rectangle_2682" data-name="Rectangle 2682" width="2.728" height="17.075" transform="translate(893.541 1404.813)" fill="#fff"/>
+      <rect id="Rectangle_2683" data-name="Rectangle 2683" width="2.728" height="11.115" transform="translate(899.163 1407.793)" fill="#fff"/>
+      <rect id="Rectangle_2684" data-name="Rectangle 2684" width="2.728" height="5.155" transform="translate(904.786 1410.773)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
