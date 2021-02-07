@@ -298,14 +298,16 @@ body {
 //        min-height: calc(100vh - 81px);
         min-height: 100vh;
 //        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
-        background-image: url(../images/main/Book.png), url(../images/main/bg.jpg);
-        background-size: 1000px, cover;
+//        background-image: url(../images/main/Book.png), url(../images/main/bg.jpg);
+        background-image: url(../images/main/Book-min.png), url(../images/main/bg.jpg);
+        background-size: contain, cover;
         background-repeat: no-repeat;
 //        background-position: center -100px, center;
         background-position: bottom, top;
 
         img {
-            width: 300px
+            width: 300px;
+            display: none
         }
 
         .start-link {
@@ -326,15 +328,15 @@ body {
             }
         }
         @media (min-width: 1920px) {
-            background-image: url(../images/main/Book@2x.png), url(../images/main/bg@2x.jpg);
+            background-image: url(../images/main/Book@2x-min.png), url(../images/main/bg@2x.jpg);
             min-height: calc(100vh - 81px);
             background-position: center , top;
         }
 
         @media (max-width: 991.98px) {
 
-            background-size: 100%, cover;
-            background-position: bottom,top;
+            background-size: contain,cover;
+            background-position: center,top;
 
         }
 //
@@ -342,7 +344,9 @@ body {
             background-image: url(../images/main/Book.png), url(../images/main/bgphone-min.jpg);
             background-size: 100% , 100%;
             background-position: bottom, top;
-
+            img{
+                display: inline-block
+            }
         }
     }
 
