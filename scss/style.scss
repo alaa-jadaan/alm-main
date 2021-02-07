@@ -295,14 +295,14 @@ body {
 
 #main-page {
     #home {
-//        min-height: calc(100vh - 81px);
+        //        min-height: calc(100vh - 81px);
         min-height: 100vh;
-//        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
-//        background-image: url(../images/main/Book.png), url(../images/main/bg.jpg);
+        //        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
+        //        background-image: url(../images/main/Book.png), url(../images/main/bg.jpg);
         background-image: url(../images/main/Book-min.png), url(../images/main/bg.jpg);
         background-size: contain, cover;
         background-repeat: no-repeat;
-//        background-position: center -100px, center;
+        //        background-position: center -100px, center;
         background-position: bottom, top;
 
         img {
@@ -320,31 +320,36 @@ body {
             //            height: 58px;
             //            line-height: 58px
         }
+
         @media (min-width: 1500px) {
             min-height: calc(100vh - 81px);
             background-position: bottom, top;
-            img{
+
+            img {
                 margin-top: 100px !important
             }
         }
+
         @media (min-width: 1920px) {
             background-image: url(../images/main/Book@2x-min.png), url(../images/main/bg@2x.jpg);
             min-height: calc(100vh - 81px);
-            background-position: center , top;
+            background-position: center, top;
         }
 
         @media (max-width: 991.98px) {
 
-            background-size: contain,cover;
-            background-position: center,top;
+            background-size: contain, cover;
+            background-position: center, top;
 
         }
-//
+
+        //
         @media (max-width: 575.98px) {
             background-image: url(../images/main/Book.png), url(../images/main/bgphone-min.jpg);
-            background-size: 100% , 100%;
+            background-size: 100%, cover;
             background-position: bottom, top;
-            img{
+
+            img {
                 display: inline-block
             }
         }
@@ -393,12 +398,13 @@ body {
                 border-width: 2px;
                 border-radius: 0;
                 width: 190px;
-                height: 45px;
-                line-height: 45px;
+                max-width: 100%;
+                //                height: 45px;
+                //                line-height: 45px;
                 font-family: $fontShamelBold;
                 font-size: .9rem;
-                padding-bottom: 0;
-                padding-top: 0;
+                //                padding-bottom: 0;
+                padding-top: 12px;
 
                 img {
                     width: 11px;
@@ -447,12 +453,13 @@ body {
     }
 
     #reads-card {
-//        background: rgba(123, 180, 140, 1);
-//        background: linear-gradient(180deg, rgba(123, 180, 140, 1) 0%, rgba(75, 144, 155, 1) 100%);
-//        box-shadow: 0 58px 58px rgba(79, 107, 154, 0.22);
+        //        background: rgba(123, 180, 140, 1);
+        //        background: linear-gradient(180deg, rgba(123, 180, 140, 1) 0%, rgba(75, 144, 155, 1) 100%);
+        //        box-shadow: 0 58px 58px rgba(79, 107, 154, 0.22);
         background: transparent linear-gradient(180deg, #C5C5C5 0%, #999999 100%) 0% 0% no-repeat padding-box;
-        
+
         box-shadow: 0px 58px 58px #54545438;
+
         .card-title {
             color: #5B5B5B
         }
@@ -519,9 +526,11 @@ body {
             padding-bottom: .5rem;
             padding-top: .5rem
         }
-        a{
+
+        a {
             text-decoration: none
         }
+
         .card {
             background: #fff;
             box-shadow: 0 21px 37px rgba(0, 0, 0, 0.16);
@@ -532,20 +541,25 @@ body {
             max-width: 340px;
             text-align: right;
             height: 500px;
-                transition: .3s;
+            transition: .3s;
         }
+
         .card:not(.placeholder-card):hover {
             transform: translateY(-10px);
         }
-        .placeholder-img{
+
+        .placeholder-img {
             width: 95%;
         }
-        .placeholder-card{
+
+        .placeholder-card {
             background: #d4d4d4
         }
-        .placeholder-img2{
+
+        .placeholder-img2 {
             margin: auto
         }
+
         .card-img-top {
             border-radius: 0
         }
@@ -601,16 +615,16 @@ body {
             line-height: 1.5rem
         }
 
-//        .card-text:after {
-//            content: "";
-//            text-align: right;
-//            position: absolute;
-//            bottom: 0;
-//            left: 0;
-//            width: 70%;
-//            height: 1.5rem;
-//            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
-//        }
+        //        .card-text:after {
+        //            content: "";
+        //            text-align: right;
+        //            position: absolute;
+        //            bottom: 0;
+        //            left: 0;
+        //            width: 70%;
+        //            height: 1.5rem;
+        //            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+        //        }
 
         @media (max-width: 575.98px) {
             .card {
@@ -1277,11 +1291,11 @@ body {
 
         #faded-div {
             width: 100%;
-//            height: 520px;
-            height:100%;
-            background-color: #48315a;
-            //            background: linear-gradient(180deg, rgba(72, 49, 90, 0) 0%, rgba(72, 49, 90, 1) 100%);
-            background: transparent linear-gradient(180deg, rgba(72, 49, 90, .0) 0%,rgba(72, 49, 90, .9) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+            height: 520px;
+            //            height:100%;
+            //            background-color: #48315a;
+            background: linear-gradient(180deg, rgba(72, 49, 90, 0) 0%, rgba(72, 49, 90, 1) 100%);
+            //            background: transparent linear-gradient(180deg, rgba(72, 49, 90, .0) 0%,rgba(72, 49, 90, .9) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
             position: absolute;
             bottom: 0;
             z-index: 0
@@ -1305,13 +1319,15 @@ body {
                 padding-bottom: 10px
             }
         }
-        .course-opened{
-            .btn{
+
+        .course-opened {
+            .btn {
                 background: transparent linear-gradient(98deg, #CCB06F 0%, #A88B4A 100%) 0% 0% no-repeat padding-box;
             }
         }
-        .course-closed{
-            .btn{
+
+        .course-closed {
+            .btn {
                 background: transparent linear-gradient(98deg, #A8A8A8 0%, #848484 100%) 0% 0% no-repeat padding-box;
             }
         }
@@ -1351,34 +1367,43 @@ body {
             }
         }
 
-                @media (max-width: 991.98px) {
-                    background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
-                    background-position:   center;
-                    #faded-div {
-                        height: 100%;
-                    }
-                    .card {
-                        color: #393939;
-                        width: 90%;
-                        margin: auto
-                    }
-                    .course-description{
-                        margin-top: 350px;
-                            margin-bottom: 100px
-                    }
-                }
+        @media (max-width: 991.98px) {
+//            background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
+            background-position:  70%;
+            background-size: auto 100%;
+
+            #faded-div {
+                height: 100%;
+                background-color: #48315a;
+                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 0%, rgba(72, 49, 90, .9) 40%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+
+            }
+
+            .card {
+                color: #393939;
+                width: 90%;
+                margin: auto
+            }
+
+            .course-description {
+                margin-top: 350px;
+                margin-bottom: 100px
+            }
+        }
+
         //
-                @media (max-width: 575.98px) {
-                    background-color: #48315a;
-                    background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
-                    background-size: 100%;
-                    background-position: top;
-                    .course-description{
-                        padding-left: 30px;
-                        padding-right: 30px;
-                    }
-        
-                }
+        @media (max-width: 575.98px) {
+            background-color: #48315a;
+            background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
+            background-size: 100%;
+            background-position: top;
+
+            .course-description {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+        }
     }
 
     #course-contents {
@@ -1432,7 +1457,7 @@ body {
 
 
         @media (max-width: 575.98px) {
-            .card{
+            .card {
                 margin-bottom: 30px
             }
 
@@ -1479,8 +1504,9 @@ body {
             list-style: disc;
             margin-bottom: 10px
         }
+
         @media (max-width: 575.98px) {
-            .card-conditions{
+            .card-conditions {
                 margin-bottom: 30px
             }
 
@@ -1666,18 +1692,21 @@ body {
         }
 
         .certificate-img {
-//            max-width: 100%;
+            //            max-width: 100%;
             margin: auto;
             position: absolute;
             bottom: -289px;
             left: -156px;
             z-index: 3
         }
+
         @media (max-width: 991.98px) {
             padding-bottom: 0;
-            .card-body{
+
+            .card-body {
                 padding-bottom: 0
             }
+
             .certificate-img {
                 max-width: 100%;
                 position: relative;
@@ -1685,10 +1714,8 @@ body {
                 left: auto
             }
         }
+
         //
-        @media (max-width: 575.98px) {
-
-
-        }
+        @media (max-width: 575.98px) {}
     }
 }
