@@ -1375,7 +1375,7 @@ body {
             #faded-div {
                 height: 100%;
                 background-color: #48315a;
-                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 0%, rgba(72, 49, 90, .9) 40%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 15%, rgba(72, 49, 90, .9) 40%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
 
             }
 
@@ -1385,19 +1385,28 @@ body {
                 margin: auto
             }
 
-            .course-description {
+            .course-description  {
                 margin-top: 350px;
-                margin-bottom: 100px
+                margin-bottom: 100px;
+                .text{
+                    text-align: justify
+                }
+                
             }
         }
 
         //
         @media (max-width: 575.98px) {
             background-color: #48315a;
-            background-image: url(../images/jazariah/jazariyeh-header-phone.jpg);
+            background-image: url(../images/jazariah/jazariyeh-header-phone2.jpg);
             background-size: 100%;
             background-position: top;
-
+            #faded-div {
+                height: 100%;
+//                background-color: #fff;
+//                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 0%, rgba(72, 49, 90, .9) 30%, rgba(72, 49, 90, 1) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 30vh, rgba(72, 49, 90, .5) 40vh, rgba(72, 49, 90, 1) 50vh, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+            }
             .course-description {
                 padding-left: 30px;
                 padding-right: 30px;
