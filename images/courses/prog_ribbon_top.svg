@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="269" height="59" viewBox="0 0 269 59">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.492" y1="-2.746" x2="0.088" y2="2.887" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#faeabe"/>
+      <stop offset="1" stop-color="#8a6b2c"/>
+    </linearGradient>
+  </defs>
+  <rect id="prog_ribbon_top" width="269" height="59" fill="url(#linear-gradient)"/>
+</svg>

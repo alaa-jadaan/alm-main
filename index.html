@@ -44,7 +44,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">مقالات شاملة</h5>
                                 <p class="card-text">يقدم موقع ألف لام ميم مقالات نوعية ومميزة وشاملة في مختلف المواضيع الشرعية والاجتماعية المهمة</p>
-                                <a href="#" role="button" class="btn"> <img src="images/main/L-arrow_white.svg" class="mr-2" alt=""> تابعي المزيد </a>
+                                <a href="#" role="button" class="btn"> <img src="images/main/L-arrow_white.svg" class="svg mr-2" alt=""> تابعي المزيد </a>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">دورات تخصصية</h5>
                                 <p class="card-text">يقدم موقع ألف لام ميم دورات تخصصية في أهم أقسام العلوم الشرعية أو العلوم المتعلقة بكتاب الله تعالى</p>
-                                <a href="#" role="button" class="btn"> <img src="images/main/L-arrow_white.svg" class="mr-2" alt=""> تابعي المزيد </a>
+                                <a href="#" role="button" class="btn"> <img src="images/main/L-arrow_white.svg" class="svg mr-2" alt=""> تابعي المزيد </a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">مقرأة إلكترونية</h5>
                                 <p class="card-text">يمنح موقع ألف لام ميم فرصة للراغبات في حفظ كتاب الله تعالى</p>
-                                <a href="#" role="button" class="btn"> <img src="images/main/L-arrow_white.svg" class="mr-2" alt=""> تابعي المزيد </a>
+                                <a href="#" role="button" class="btn"> <img src="images/main/L-arrow_white.svg" class="svg mr-2" alt=""> تابعي المزيد </a>
                             </div>
                         </div>
                     </div>
@@ -83,8 +83,9 @@
 -->
                 <div class="courses-slider">
                     <div>
-                       <a href="jazariah.html">
+                       
                         <div class="card">
+                            <a href="jazariah.html">
                             <img src="images/main/jazariyeh-course-desktop.jpg" class="card-img-top" alt="">
 
                             <div class="card-body">
@@ -98,7 +99,38 @@
                                     <p class="card-text fade-overflow">دورة في شرح منظومة المقدمة الجزرية، والإجازة بها بالسند المتصل إلى الإمام ابن الجزري لمن تحفظها، بعد أن تجتاز الاختبارات بنجاح</p>
                                 </div>
                             </div>
-                           </div></a>
+                            </a>
+                            </div>
+                    </div>
+<!--
+                    <div>
+                        <div class="card">
+                            <a href="hadeeth-40.html">
+                                <img src="images/hadeeth40/Nawawie-header-phone.jpg" class="card-img-top" alt="">
+
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="time float-right">المدة <span>5</span> أشهر</div>
+                                        <div class="lessons float-left"><span>18</span> درساً</div>
+                                    </div>
+                                    <div class="details">
+                                        <h5 class="card-title">دورة شرح وحفظ الأربعين النووية</h5>
+                                        <p class="card-text fade-overflow">دورة في شرح متن أحاديث " الأربعين النووية " والإجازة بالسند المتصل إلى الإمام النووي بعد اجتياز الاختبارات</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+-->
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
                     </div>
                     <div>
                         <div class="card placeholder-card">
@@ -428,12 +460,15 @@
     <script>
         $(document).ready(function() {
             $('.courses-slider').slick({
-                dots: false,
+                dots: true,
                 infinite: true,
-                arrows: false,
                 rtl: true,
                 speed: 300,
-                slidesToShow: 4,
+//                centerMode: true,
+//                focusOnSelect:false,
+//                edgeFriction
+//                slidesToShow: 1,
+                variableWidth: true,
                 slidesToScroll: 1,
                 responsive: [{
                         breakpoint: 1200,
@@ -444,19 +479,22 @@
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 2,
+                            variableWidth:false,
+                            dots: true
                         }
                     },
                     {
                         breakpoint: 576,
                         settings: {
                             slidesToShow: 1,
-                            dots: false,
-                            arrows: false
+                            variableWidth:false,
+                            dots: true
                         }
                     }
                 ]
             });
+            
         });
     </script>
     <!--  main js file  -->
