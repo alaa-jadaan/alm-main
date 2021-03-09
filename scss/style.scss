@@ -112,7 +112,7 @@ body {
     background: linear-gradient(103deg, #CCB06F 0%, #A88B4A 100%);
     color: #fff;
     max-width: 100%;
-
+border: none;
     &:hover {
         color: #fff
     }
@@ -123,7 +123,7 @@ body {
     background: linear-gradient(103deg, #715378 0%, #5D4164 100%);
     color: #fff;
     max-width: 100%;
-
+    border: none;
     &:hover {
         color: #fff;
         background: linear-gradient(103deg, #715378 100%, #5D4164 0%);
@@ -150,7 +150,10 @@ body {
 //    height: 75px;
     //    position: fixed;
     //    z-index: 1;
-
+    .container-fluid {
+        max-width: 1512px;
+        padding: 0 ;
+    }
     &.bg-dark {
         background-color: #3b2a4a !important;
     }
@@ -2381,7 +2384,48 @@ body {
     background-repeat: no-repeat;
     background-image: url(../images/contact-us/Contact-alm-bg-small.jpg) ;
     padding: 100px 0;
-    
+//    padding-top: 100px;
+    min-height: calc(100vh - 111px);
+//    min-height: calc(100vh - 300px);
+    /* intlTelInput plugin */
+    .iti {
+        width: 100%;
+        direction: ltr
+    }
+
+
+    #error-msg {
+        color: #dc3545;
+        font-size: .9rem
+    }
+
+    #valid-msg {
+        color: #28a745;
+        font-size: .9rem
+    }
+
+    input.error {
+        border: 1px solid #dc3545 !important;
+    }
+
+    @media (min-width: 768px) {
+        .iti__country-list {
+            white-space: nowrap;
+            max-width: 295px;
+
+            li {
+                max-width: 275px;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .iti__country-list {
+            white-space: normal;
+        }
+    }
     .main-text{
         color: #471280;
         font-family: $fontShamelBold;
@@ -2395,12 +2439,14 @@ body {
         text-align: right;
     }
     .form-wrapper {
-        width: 100%;
-        margin: auto;
+        width: 90%;
+        margin-right: auto;
         padding: 50px 30px;
         background-color: #fff;
-        text-align: right
+        text-align: right;
+        box-shadow: 0px 50px 89px #0000002B;
     }
+    
     input {
         font-size: 16px
     }
@@ -2419,9 +2465,20 @@ body {
         &:hover{
             border-color: #3C2A4A
         }
+        &:focus{
+            box-shadow: none;
+            border-color: #000;
+        }
+    }
+    .phone-input {
+        direction: ltr
     }
     button[type="submit"] {
-        border-radius: 0
+        border-radius: 0;
+        font-family: $fontShamelBold;
+        font-size: 1rem;
+        padding-top: 10px;
+        letter-spacing: 1px
     }
     .form-control::-webkit-input-placeholder {
         color: $placeholder;
@@ -2446,6 +2503,59 @@ body {
     .form-control::placeholder {
         color: $placeholder;
         opacity: 1
+    }
+    @media (min-width: 1920px) {
+                background-image: url(../images/contact-us/Contact-alm-bg%204k.jpg) ;
+
+    }
+    @media (max-width: 1199.98px) {
+        background-size: cover;
+//        background-attachment: fixed;
+        background-position: right;
+//        background-repeat: no-repeat;
+//        background-image: url(../images/contact-us/Contact-alm-bg-small.jpg) ;
+//        
+        .form-wrapper{
+            width: 100%
+        }
+    }
+    @media (max-width: 991.98px) {
+        .main-text, .follow-text{
+            text-align: center
+        }
+        .form-wrapper{
+            margin-top: 30px
+        }
+    }
+    .form-control.is-valid,
+    .was-validated .form-control:valid,
+    .form-control.is-invalid,
+    .was-validated .form-control:invalid {
+        padding-right: .75rem;
+        background: #eee;
+        border-color: #dc3545
+    }
+    .form-control.is-valid,
+    .was-validated .form-control:valid {
+        border-color: #eee;
+
+        &:hover {
+            border-color: #3C2A4A
+        }
+
+        &:focus {
+            border-color: #000;
+            box-shadow: none;
+        }
+
+        &:disabled {
+            border-color: #CECECE
+        }
+        
+    }
+    .field-error-msg, .invalid-feedback {
+        color: #dc3545;
+        font-size: .9rem
     }
 }
 #search-page{
