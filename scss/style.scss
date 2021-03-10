@@ -404,7 +404,7 @@ border: none;
 
     #features {
         background-color: #eee;
-
+padding: 1rem 0;
         .col {
             margin-bottom: 80px;
 
@@ -579,15 +579,20 @@ border: none;
 
     #subjects {
         background-color: #48315A;
-
+padding-bottom: 0px;
+//        padding-top: .1rem;
         .container-fluid {
+            max-width: 1512px;
             padding-right: 3%;
             padding-left: 3%
         }
 
-        header h2 {
+        header{
+            margin-top: 20px;
+        h2 {
             color: #fff;
-            margin-bottom: 100px
+            margin-bottom: 60px
+        }
         }
 
         .col {
@@ -603,7 +608,8 @@ border: none;
             //        width: 95%;
             width: 230px;
             max-width: 100%;
-            transition: 1s
+            transition: 1s;
+            box-shadow: 0px 20px 36px #D0CCEB36;
         }
 
         .card-img-top {
@@ -614,18 +620,24 @@ border: none;
         }
 
         .card-body {
-            margin-top: 90px;
-            transition: 1s
+//            margin-top: 90px;
+            margin-top: 50px;
+            transition: 1s;
+            padding: 0;
         }
 
         .card-title {
             font-family: $fontShamelBold;
-            font-size: 1.2rem;
-            min-height: 50px;
+            font-size: 1.1rem;
+            min-height: 40px;
+            margin-bottom: 0;
+            padding-top: 1.25rem;
+            padding-right: .9rem;
+            padding-left: .9rem
         }
 
         hr {
-            width: 40%;
+            width: 30%;
             border-color: #3C2A4A;
             border-width: 2px
         }
@@ -637,11 +649,14 @@ border: none;
 
         .details {
             display: none;
+            padding: 1.25rem;
+            padding-top: 0
         }
 
         .card-text {
 //            font-size: 1rem
-            font-size: 0.875rem
+            font-size: 0.875rem;
+            
         }
 
         .btn {
@@ -722,7 +737,7 @@ border: none;
         background-position: center;
 
         .col {
-            margin-bottom: 50px
+            margin-bottom: 20px
         }
 
         .card {
@@ -734,7 +749,7 @@ border: none;
         }
 
         .card-img-top {
-            width: 140px;
+            width: 120px;
             max-width: 100%;
             margin: auto
         }
@@ -742,15 +757,22 @@ border: none;
         .card-title {
             color: #471280;
             font-family: $fontTajawalBlack;
-            font-size: 3rem //        padding-bottom: 10px
+            font-size: 2.5rem //        padding-bottom: 10px
         }
 
         .card-text {
-            font-size: 2rem;
-            font-family: $fontTajawalMedium
+            font-size: 1.8rem;
+            font-family: $fontNotoRegular
         }
     }
 
+    @media (min-width: 1200px) {
+        #statistics {
+            .card-text{
+                
+            }
+        }
+    }
     @media (max-width: 1288px) {
         #statistics {
             background-size: cover;
@@ -764,11 +786,12 @@ border: none;
             }
 
             .card-title {
-                font-size: 2rem //        padding-bottom: 10px
+                font-size: 2rem; //        padding-bottom: 10px
+                    margin-bottom: 0
             }
 
             .card-text {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -780,15 +803,6 @@ border: none;
                 width: 100px
             }
 
-            .card-title {
-                font-size: 1.2rem ;//        padding-bottom: 10px
-                font-family: $fontShamelBold;
-            }
-
-            .card-text {
-                font-size: 1.2rem;
-                font-family: $fontShamelBold;
-            }
         }
     }
 
@@ -798,20 +812,24 @@ border: none;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
-
+padding: 1.2rem 0;
         .row {
             direction: rtl
         }
 
         .text {
             color: #fff;
-            font-size: 2rem;
-            font-family: $fontShamelBold;
+            font-size: 1.5rem;
+            font-family: $fontNotoBold;
         }
 
         .btn {
-            width: 200px;
-            font-size: 1.2rem
+            width: 180px;
+            font-family: $fontShamelBold;
+            font-size: 1rem;
+            padding-top: 8px;
+            padding-bottom: 3px;
+            border-radius: 0
         }
     }
 
@@ -827,13 +845,16 @@ border: none;
 
 #main-page, #search-page{
     #courses {
+        padding-top: 1rem;
         .container-fluid {
             padding-left: 0px;
             padding-right: 30px
         }
-
+        header{
+            margin-bottom: 30px
+        }
         header h2 {
-            color: #fff
+            color: #fff;
         }
 
         .btn {
@@ -841,9 +862,10 @@ border: none;
             max-width: 100%;
             font-size: 1.3rem;
             font-family: $fontTajawalMedium;
-            margin-top: 80px;
-            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
             border-radius: 0;
+            border: none;
             padding-bottom: .5rem;
             padding-top: .5rem
         }
@@ -954,12 +976,12 @@ border: none;
 
         @media (max-width: 767.98px) {
             .container-fluid {
-                padding-left: 30px
+//                padding-left: 30px
             }
         }
         @media (max-width: 575.98px) {
             .card {
-                max-width: 60%
+//                max-width: 60%
             }
         }
     }
@@ -1352,7 +1374,8 @@ border: none;
     }
 }
 #main-page #services{
-    
+//    padding-bottom: 10px
+    padding-top: 1rem
 }
 #maqraa-page #services,
 #main-page #services {
@@ -1364,7 +1387,7 @@ border: none;
     direction: rtl;
 
     .col {
-        margin-bottom: 50px
+        margin-bottom: 30px
     }
 
     .card {
@@ -1374,13 +1397,13 @@ border: none;
         color: #DCC6EF;
         border-radius: 0;
         margin: auto;
-        width: 95%;
-        padding-top: 30px;
-        padding-bottom: 20px
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 0px
     }
 
     .card-img-top {
-        height: 110px;
+        height: 80px;
     }
 
     .card-title {
@@ -1394,8 +1417,19 @@ border: none;
     }
 
     .card-text {
-        margin-top: 15px;
+        margin-top: 0px;
         font-size: 0.875rem
+    }
+    @media (max-width: 767.98px) {
+        .card{
+            width: 100%
+        }
+    }
+    @media (max-width: 575.98px) {
+        .card{
+            width: 315px;
+            max-width: 100%
+        }
     }
 }
 
@@ -1645,7 +1679,7 @@ border: none;
             margin-bottom: 10px
         }
 
-        @media (max-width: 575.98px) {
+        @media (max-width: 991.98px) {
             .card-conditions {
                 margin-bottom: 30px
             }
@@ -1880,26 +1914,34 @@ border: none;
         
     }
     #curriculum {
-        .importance{
-            color: #fff;
-            font-family: $fontNotoBold;
-            font-size: 1rem;
-            width: 40%;
-            margin: auto;
-            line-height: 2;
-            text-align: justify;
-            text-align-last: center;
-            margin-bottom: 120px
-        }
         .card-body {
             &::after {
                 height: 68%;
             }
         }
-        @media (max-width: 575.98px) {
-            .importance{
-                width: 85%;
-            }
+//        @media (max-width: 575.98px) {
+//            .importance{
+//                width: 85%;
+//            }
+//        }
+    }
+    #importance{
+        background-color: #eee;
+//        padding: 0;
+        padding-top: 0;
+        margin: 0;
+        .text{
+            color: #393939;
+            font-family: $fontNotoBold;
+            font-size: 1rem;
+            width: 700px;
+            max-width: 100%;
+            margin: auto;
+            line-height: 2;
+            text-align: right;
+//            text-align: justify;
+//            text-align-last: center;
+            margin-bottom: 50px
         }
     }
     #gain{
