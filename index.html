@@ -81,7 +81,7 @@
                 <div class="row">
                 </div>
 -->
-                <div class="courses-slider">
+                <div id="courses-slider">
                     <div>
                        
                         <div class="card">
@@ -91,8 +91,8 @@
                             <div class="card-body">
                                 <!--                                <div class="level">مستوى أول</div>-->
                                 <div class="clearfix">
-                                    <div class="time float-right">المدة <span>5</span> أشهر</div>
-                                    <div class="lessons float-left"><span>18</span> درساً</div>
+                                    <div class="time float-right">المدة: <span>5</span> أشهر</div>
+                                    <div class="lessons float-left"><span>الدروس: </span><span>18</span> </div>
                                 </div>
                                 <div class="details">
                                     <h5 class="card-title">دورة شرح وحفظ منظومة الجزرية</h5>
@@ -109,8 +109,8 @@
 
                                 <div class="card-body">
                                     <div class="clearfix">
-                                        <div class="time float-right">المدة <span>5</span> أشهر</div>
-                                        <div class="lessons float-left"><span>18</span> درساً</div>
+                                        <div class="time float-right">المدة: <span>3</span> أشهر</div>
+                                        <div class="lessons float-left"><span>الدروس: </span><span>10</span> </div>
                                     </div>
                                     <div class="details">
                                         <h5 class="card-title">دورة شرح وحفظ الأربعين النووية</h5>
@@ -378,6 +378,7 @@
             </div>
         </section>
 
+<!--
         <section id="call-to-action" class="text-center">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 align-items-center">
@@ -438,6 +439,7 @@
                 </div>
             </div>
         </section>
+-->
 
     </main>
 
@@ -455,46 +457,10 @@
 
     <!--  slick slider  -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.courses-slider').slick({
-                dots: true,
-                infinite: true,
-                rtl: true,
-                speed: 300,
-//                centerMode: true,
-//                focusOnSelect:false,
-//                edgeFriction
-//                slidesToShow: 1,
-                variableWidth: true,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-//                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-//                            slidesToShow: 2,
-//                            variableWidth:false,
-//                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-//                            slidesToShow: 1,
-//                            variableWidth:true,
-//                            dots: true
-                        }
-                    }
-                ]
-            });
-            
-        });
-    </script>
+    
+    <!--  truncate multiple lines of text  -->
+    <script src="js/jQuery.succinct.min.js"></script>
+   
     <!--  main js file  -->
     <script src="js/script.js"></script>
 </body></html>

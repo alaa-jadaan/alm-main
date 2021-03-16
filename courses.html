@@ -26,8 +26,15 @@
     <nav id="top-nav" class="navbar navbar-expand-lg navbar-light sticky-top">
     </nav>
     <main id="courses-page">
+       
         <section id="subjects" class="text-center pb-4 mb-0">
            <div class="background-overlay"></div>
+            <div class=" container-fluid mb-4">
+                <div id="search-wrapper" class="search-white">
+                    <input type="search" class="form-control" placeholder="ابحث عن دورات">
+                    <img src="images/search/search%20icon%20white.svg" class="search-img">
+                </div>
+            </div>
             <header>
                 <h2>الدورات التعليمية</h2>
             </header>
@@ -152,12 +159,81 @@
             <a href="#" role="button" class="btn btn-main-gradient show-more">المزيد</a>
         </section>
 
-        
+        <section id="courses" class="text-center">
+            <header>
+                <h2>الدورات التعليمية</h2>
+            </header>
+            <div class="container-fluid" dir="rtl">
+                <!--
+<div class="row">
+</div>
+-->
+                <div id="courses-slider">
+                    <div>
 
-        
+                        <div class="card">
+                            <a href="jazariah.html">
+                                <img src="images/jazariah/jazariyeh-header.jpg" class="card-img-top" alt="">
 
-        
-
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="time float-right">المدة: <span>5</span> أشهر</div>
+                                        <div class="lessons float-left"><span>الدروس: </span><span>18</span> </div>
+                                    </div>
+                                    <div class="details">
+                                        <h5 class="card-title">دورة شرح وحفظ منظومة الجزرية</h5>
+                                        <p class="card-text fade-overflow">دورة في شرح منظومة المقدمة الجزرية، والإجازة بها بالسند المتصل إلى الإمام ابن الجزري لمن تحفظها، بعد أن تجتاز الاختبارات بنجاح</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <a href="hadeeth-40.html">
+                                <img src="images/hadeeth40/Nawawie-header.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="time float-right">المدة: <span>3</span> أشهر</div>
+                                        <div class="lessons float-left"><span>الدروس: </span><span>10</span> </div>
+                                    </div>
+                                    <div class="details">
+                                        <h5 class="card-title">دورة شرح وحفظ الأربعين النووية</h5>
+                                        <p class="card-text fade-overflow">دورة في شرح متن أحاديث " الأربعين النووية " والإجازة بالسند المتصل إلى الإمام النووي بعد اجتياز الاختبارات</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card placeholder-card">
+                            <img src="images/main/Course-coming-soon.svg" class="m-auto placeholder-img" alt="coming soon">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" role="button" class="btn btn-main-gradient show-more">المزيد</a>
+            </div>
+        </section>
     </main>
 
     <footer id="page-footer" class="pt-5"></footer>
@@ -174,40 +250,8 @@
 
     <!--  slick slider  -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.courses-slider').slick({
-                dots: false,
-                infinite: true,
-                arrows: false,
-                rtl: true,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            dots: false,
-                            arrows: false
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
+    <!--  truncate multiple lines of text  -->
+    <script src="js/jQuery.succinct.min.js"></script>
     <!--  main js file  -->
     <script src="js/script.js"></script>
 </body></html>

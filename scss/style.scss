@@ -290,15 +290,17 @@ border: none;
 #courses-page,
 .course-page{
     section {
-        padding: 3rem 0;
+        padding: 2rem 0;
 
         //    z-index: -2
     }
 
     section header {
-        font-family: $fontShamelBold;
-        margin-bottom: 80px;
-        margin-top: 50px;
+//        font-family: $fontShamelBold;
+        font-family: $fontNotoBold;
+//        margin-bottom: 80px;
+        margin-bottom: 40px;
+        margin-top: 10px;
 
         //    position: relative;
         //    z-index: 10000;
@@ -315,11 +317,11 @@ border: none;
             content: " ";
             width: 110%;
             height: 3px;
-            border-top: 20px solid rgba(162, 162, 162, .3);
+            border-top: 18px solid rgba(162, 162, 162, .3);
             display: inline-block;
             position: absolute;
             left: -5%;
-            bottom: 0px;
+            bottom: -5px;
             z-index: -1
         }
 
@@ -332,7 +334,7 @@ border: none;
 
             h2::after {
                 border-top: 10px solid rgba(162, 162, 162, .3);
-                bottom: 5px;
+                bottom: -2px;
             }
         }
     }
@@ -340,8 +342,8 @@ border: none;
 
 #main-page {
     #home {
-        //        min-height: calc(100vh - 81px);
-        min-height: 100vh;
+                min-height: calc(100vh - 75px);
+//        min-height: 100vh;
         //        background-image: url(../images/main/Home_Hero_illustrationsvg.svg), url(../images/main/Home_Hero_BGjpg.jpg);
         //        background-image: url(../images/main/Book.png), url(../images/main/bg.jpg);
         background-image: url(../images/main/Book-min.png), url(../images/main/bg.jpg);
@@ -367,7 +369,7 @@ border: none;
         }
 
         @media (min-width: 1500px) {
-            min-height: calc(100vh - 81px);
+            min-height: calc(100vh - 75px);
             background-position: bottom, top;
 
             img {
@@ -377,7 +379,7 @@ border: none;
 
         @media (min-width: 1920px) {
             background-image: url(../images/main/Book@2x-min.png), url(../images/main/bg@2x.jpg);
-            min-height: calc(100vh - 81px);
+            min-height: calc(100vh - 75px);
             background-position: center, top;
         }
 
@@ -404,9 +406,9 @@ border: none;
 
     #features {
         background-color: #eee;
-padding: 1rem 0;
+//padding: 1rem 0;
         .col {
-            margin-bottom: 80px;
+            margin-bottom: 16px;
 
         }
 
@@ -416,26 +418,34 @@ padding: 1rem 0;
             border: 0;
             //        min-height: 465px;
             margin: auto;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             transition: .3s;
             padding-left: 25px;
             padding-right: 25px;
-
+            width: 90%;
+            
             .card-img-top {
-                margin-top: 30px;
-                height: 133px
+                margin: auto;
+                margin-top: 20px;
+//                height: 133px
+                width: 150px;
+                max-width: 100%
             }
-
+            .card-body {
+//                padding-left: 0;
+//                padding-right: 0
+            }
+            
             .card-title {
                 margin-bottom: 20px;
                 font-family: $fontShamelBold;
                 font-size: 1.3rem
             }
-
             .card-text {
                 min-height: 100px;
 //                font-size: 1rem
-                font-size: 0.875rem
+                font-size: 0.875rem;
+                margin-bottom: 10px
             }
 
             .btn {
@@ -448,13 +458,17 @@ padding: 1rem 0;
                 //                height: 45px;
                 //                line-height: 45px;
                 font-family: $fontShamelBold;
-                font-size: .9rem;
+                font-size: .85rem;
                 //                padding-bottom: 0;
                 padding-top: 12px;
 
-                img {
-                    width: 11px;
-                    transition: .3s
+//                img {
+//                    width: 11px;
+//                    transition: .3s
+//                }
+                svg{
+                    width: 9px;
+                    height: auto;
                 }
             }
 
@@ -588,7 +602,7 @@ padding-bottom: 0px;
         }
 
         header{
-            margin-top: 20px;
+//            margin-top: 20px;
         h2 {
             color: #fff;
             margin-bottom: 60px
@@ -843,9 +857,9 @@ padding: 1.2rem 0;
     }
 }
 
-#main-page, #search-page{
+#main-page, #search-page, #courses-page{
     #courses {
-        padding-top: 1rem;
+//        padding-top: 1rem;
         .container-fluid {
             padding-left: 0px;
             padding-right: 30px
@@ -858,7 +872,7 @@ padding: 1.2rem 0;
         }
 
         .btn {
-            width: 210px;
+            width: 180px;
             max-width: 100%;
             font-size: 1.3rem;
             font-family: $fontTajawalMedium;
@@ -866,8 +880,8 @@ padding: 1.2rem 0;
             margin-bottom: 0px;
             border-radius: 0;
             border: none;
-            padding-bottom: .5rem;
-            padding-top: .5rem
+            padding-bottom: .3rem;
+            padding-top: .3rem
         }
 
         a {
@@ -887,7 +901,7 @@ padding: 1.2rem 0;
             max-width: 340px;
             text-align: right;
             //            height: 500px;
-            height: 420px;
+            height: 400px;
             transition: .3s;
         }
 
@@ -896,7 +910,7 @@ padding: 1.2rem 0;
         }
 
         .placeholder-img {
-            width: 88%;
+            width: 85%;
         }
 
         .placeholder-card {
@@ -939,7 +953,8 @@ padding: 1.2rem 0;
             color: #000;
             font-size: 1.1rem;
             font-family: $fontShamelBold;
-            margin-top: 25px;
+            margin-top: 15px;
+            margin-bottom: 0px;
             line-height: 2rem
         }
 
@@ -986,7 +1001,7 @@ padding: 1.2rem 0;
         }
     }
 }
-#main-page{
+#main-page, #courses-page{
     #courses {
         background-color: #48315A;
     }
@@ -998,6 +1013,7 @@ padding: 1.2rem 0;
         }
         .card{
             width: 100%;
+            height: 372px;
             
             &:not(.placeholder-card):hover{
                 transform: none
@@ -1101,7 +1117,11 @@ padding: 1.2rem 0;
         direction: rtl;
         border-radius: 0;
         background-color: #D6D6D6;
-        color: #828282
+        color: #828282;
+        &:focus{
+            box-shadow: none;
+            border-color: #c8c8c8
+        }
     }
 
     button[type="submit"] {
@@ -1253,7 +1273,7 @@ padding: 1.2rem 0;
         background-image: url(../images/maqraa/M_3ndS_Road.svg), url(../images/maqraa/M_3ndS_BG%20left%20illustration.svg), url(../images/maqraa/M_3ndS_BG%20right%20illustration.svg), url(../images/maqraa/M_3ndS_BG.svg);
         background-size: auto;
         background-repeat: no-repeat;
-        background-position: 190px 270px, left, right, top;
+        background-position: 190px 200px, left, right, top;
 
         //        padding-bottom: 0;
         header h2 {
@@ -1375,7 +1395,7 @@ padding: 1.2rem 0;
 }
 #main-page #services{
 //    padding-bottom: 10px
-    padding-top: 1rem
+//    padding-top: 1rem
 }
 #maqraa-page #services,
 #main-page #services {
@@ -1395,6 +1415,7 @@ padding: 1.2rem 0;
         background: linear-gradient(136deg, #715378 0%, #5D4164 100%);
         box-shadow: 0 58px 58px rgba(41, 8, 67, 0.2);
         color: #DCC6EF;
+        border: 0;
         border-radius: 0;
         margin: auto;
         width: 90%;
@@ -1403,7 +1424,10 @@ padding: 1.2rem 0;
     }
 
     .card-img-top {
-        height: 80px;
+//        height: 80px;
+        margin: auto;
+        width: 80px;
+        max-width: 100%
     }
 
     .card-title {
@@ -1426,13 +1450,22 @@ padding: 1.2rem 0;
         }
     }
     @media (max-width: 575.98px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
         .card{
             width: 315px;
             max-width: 100%
         }
     }
 }
-
+#maqraa-page #services{
+    background-position:0 -100px;
+    .card {
+        padding-top: 30px;
+        padding-bottom: 20px
+    }
+}
 #jazariah-page, .course-page {
     #home {
         min-height: calc(100vh - 81px);
@@ -1641,8 +1674,8 @@ padding: 1.2rem 0;
 
     #goals-conditions {
         background-color: #EEEEEE;
-        padding-bottom: 100px;
-        padding-top: 100px;
+        padding-bottom: 50px;
+        padding-top: 50px;
 
         .card {
             box-shadow: 0px 45px 45px rgba(0, 0, 0, 0.05);
@@ -1970,7 +2003,39 @@ padding: 1.2rem 0;
             top: 0;
             bottom: 0;
         }
-        
+//        #search-wrapper{
+////            margin-right: auto;
+//            direction: rtl;
+//            input{
+//                border-bottom: 1px solid #fff;
+//                background-color: transparent;
+//                box-shadow: none
+//            }
+//            .form-control::-webkit-input-placeholder {
+//                color: #fff;
+//                opacity: 1
+//            }
+//
+//            .form-control::-moz-placeholder {
+//                color: #fff;
+//                opacity: 1
+//            }
+//
+//            .form-control:-ms-input-placeholder {
+//                color: #fff;
+//                opacity: 1
+//            }
+//
+//            .form-control::-ms-input-placeholder {
+//                color: #fff;
+//                opacity: 1
+//            }
+//
+//            .form-control::placeholder {
+//                color: #fff;
+//                opacity: 1
+//            }
+//        }
         .container-fluid {
 //            padding-right: 3%;
 //            padding-left: 3%;
@@ -2221,15 +2286,15 @@ padding: 1.2rem 0;
     }
 
     .show-more {
-        width: 210px;
+        width: 180px;
         max-width: 100%;
         font-size: 1.3rem;
         font-family: $fontTajawalMedium;
 //        margin-top: 80px;
         margin-bottom: 20px;
         border-radius: 0;
-        padding-bottom: .5rem;
-        padding-top: .5rem;
+        padding-bottom: .3rem;
+        padding-top: .3rem;
         border: none;
         
         &:hover {
@@ -2328,6 +2393,9 @@ padding: 1.2rem 0;
     }
 }
 #courses-page #programs{
+    .col{
+        margin-bottom: 20px;
+    }
     @media (min-width: 1200px) {
         .card{
             .card-body{
@@ -2354,7 +2422,7 @@ padding: 1.2rem 0;
 }
     @media (max-width: 991.98px) { 
         .col {
-            //            margin-bottom: 80px;
+                        margin-bottom: 80px;
 //            margin-bottom: 100px;
 
         }
@@ -2480,6 +2548,9 @@ padding: 1.2rem 0;
         font-size: 1.4rem;
         text-align: right;
     }
+    .social{
+        text-align: right
+    }
     .form-wrapper {
         width: 90%;
         margin-right: auto;
@@ -2568,6 +2639,9 @@ padding: 1.2rem 0;
         .form-wrapper{
             margin-top: 30px
         }
+        .social{
+            text-align: center
+        }
     }
     .form-control.is-valid,
     .was-validated .form-control:valid,
@@ -2600,6 +2674,84 @@ padding: 1.2rem 0;
         font-size: .9rem
     }
 }
+#search-wrapper{
+    position: relative;
+    //        text-align: left;
+    width: 250px;
+    max-width: 100%;
+    margin-right: auto;
+    direction: rtl;
+    transition: .5s;
+    .search-img{
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+        width: 20px;
+        transition: .5s;
+    }
+    input{
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+        font-family: $fontNotoRegular;
+        background-color: transparent;
+        //            width: 250px;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-bottom: 0;
+        box-shadow: none;
+//        transition: .5s;
+    }
+    &.search-white{
+        input{
+            border-bottom: 1px solid #fff;
+            color: #fff
+        }
+        .form-control::-webkit-input-placeholder {
+            color: #fff;
+            opacity: 1
+        }
+
+        .form-control::-moz-placeholder {
+            color: #fff;
+            opacity: 1
+        }
+
+        .form-control:-ms-input-placeholder {
+            color: #fff;
+            opacity: 1
+        }
+
+        .form-control::-ms-input-placeholder {
+            color: #fff;
+            opacity: 1
+        }
+
+        .form-control::placeholder {
+            color: #fff;
+            opacity: 1
+        }
+    }
+    &.minimized{
+        width: 38px;
+        input{
+//            transition: .5s;
+//            width: 0;
+            border: 0;
+//            padding: 0
+        }
+        .search-img{
+            width: 25px
+            }
+    }
+}
+
+@media (max-width: 767.98px) {
+    #search-wrapper{
+        margin-left: auto;
+        margin-right: 0
+    }
+}
 #search-page{
     direction: rtl;
     padding: 80px 0;
@@ -2617,29 +2769,7 @@ padding: 1.2rem 0;
         font-family: $fontShamelBold;
         font-size: 1.3rem
     }
-    .search-wrapper{
-        position: relative;
-//        text-align: left;
-        width: 250px;
-        max-width: 100%;
-        margin-right: auto;
-        .search-img{
-            position: absolute;
-            left: 5px;
-            bottom: 5px;
-            width: 20px
-        }
-        input{
-            border: none;
-            border-bottom: 1px solid #000;
-            border-radius: 0;
-            font-family: $fontNotoRegular;
-            background-color: #eee;
-//            width: 250px;
-            max-width: 100%;
-            padding-left: 30px;
-        }
-    }
+    
     .filter-wrapper{
         border-left: 2px solid #393939
     }
@@ -2712,10 +2842,5 @@ padding: 1.2rem 0;
             border: none
         }
     }
-    @media (max-width: 575.98px) {
-        .search-wrapper{
-                margin-left: auto;
-            margin-right: 0
-        }
-    }
+    
 }
