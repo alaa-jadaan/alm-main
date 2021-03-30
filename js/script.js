@@ -147,4 +147,6 @@ $(function () {
             $("#search-wrapper").removeClass("minimized");
         }
     });
+    
+//    $("#success-modal").modal("show");
 });

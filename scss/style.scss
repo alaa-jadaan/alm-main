@@ -15,6 +15,12 @@ $fontTajawalMedium: "Tajawal-Medium",
 sans-serif;
 $fontTajawalBold: "Tajawal-Bold",
 sans-serif;
+//$fontTitle: "Tajawal-Medium",
+//    sans-serif;
+$fontText: "KFGQPC-Regular",
+    sans-serif;
+$fontTextBold: "KFGQPC-Bold",
+    sans-serif;
 
 @font-face {
     font-family: "NotoSansArabic-Regular";
@@ -55,12 +61,21 @@ sans-serif;
     font-family: "Tajawal-Bold";
     src: url("../fonts/Tajawal-Bold.ttf");
 }
+@font-face {
+    font-family: "KFGQPC-Regular";
+    src: url("../fonts/KFGQPC-UthmanTahaNaskh-Regular.ttf");
+}
+@font-face {
+    font-family: "KFGQPC-Bold";
+    src: url("../fonts/KFGQPC-UthmanTahaNaskh-Bold.ttf");
+}
 
 /*Main Rules*/
 html,
 body {
-    font-family: $fontNotoRegular;
-    //    font-size: 18px;
+//    font-family: $fontNotoRegular;
+    font-family: $fontText;
+//        font-size: 18px;
     padding: 0px;
     margin: 0px;
     cursor: default
@@ -146,7 +161,7 @@ border: none;
     background-color: #fff;
     box-shadow: 0 7px 40px rgba(0, 0, 0, 0.16);
     border-bottom: 10px solid #A98C4B;
-    font-size: 0.875rem;
+    font-size: 1rem;
 //    height: 75px;
     //    position: fixed;
     //    z-index: 1;
@@ -201,7 +216,7 @@ border: none;
     .nav-link {
         color: #8E8E8E;
 //        font-size: 1.1rem;
-        font-size: 0.875rem;
+        font-size: 1rem;
 
         &:hover {
             color: #373737
@@ -235,7 +250,7 @@ border: none;
         width: 150px;
         max-width: 100%;
 //        font-size: 1.1rem;
-        font-size: 0.875rem;
+        font-size: 1rem;
         margin-right: 1rem;
 
         &:hover {
@@ -1092,14 +1107,14 @@ padding: 1.2rem 0;
     }
 
     .title {
-        color: #471280;
+        color: #393939;
 //        font-family: $fontTajawalBold;
         font-family: $fontShamelBold;
         margin-bottom: 20px
     }
 
     .nav-link {
-        color: #3C2A4A;
+        color: #393939;
         font-size: 16px;
         padding: 0;
         margin-bottom: 13px;
@@ -1142,14 +1157,14 @@ padding: 1.2rem 0;
 
 #maqraa-page {
     #home {
-        min-height: calc(100vh - 81px);
+//        min-height: calc(100vh - 81px);
         //        background-image: url(../images/main/maqraa/D-M-Active.png), url(../images/maqraa/D-M-BG.jpg);
         //        background-size: contain, 100%;
         //        background-repeat: no-repeat;
         //        background-position: center 120px, top;
         background-color: #EEE;
         background-image: url(../images/maqraa/D-M-BG.jpg);
-        background-size: 100%;
+        background-size: 100% ;
         background-repeat: no-repeat;
         background-position: top;
         padding-bottom: 0;
@@ -1174,7 +1189,7 @@ padding: 1.2rem 0;
         .register-opened .text1,
         .register-closed .text1 {
             color: #393939;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             //            font-size: 1.8vw;
             font-family: $fontShamelBold;
             width: 550px;
@@ -1188,44 +1203,63 @@ padding: 1.2rem 0;
         .register-closed .text2 {
             color: #878787;
             font-size: 1.5rem;
+            font-family: $fontText;
             //            font-size: 1.2vw;
             width: 500px;
             max-width: 100%;
             margin: auto;
             margin-bottom: 20px
         }
-
+        .for-desktop{
+            width: 700px;
+            margin-top: 50px
+        }
         .for-mobile {
-            display: none
+            display: none;
+            margin: auto;
         }
 
         .countdown {
             color: #A2A2A2;
             //            font-size: 4rem;
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-family: $fontShamelBold
         }
 
         .register-form-link {
             width: 250px;
             max-width: 100%;
-            font-size: 20px;
+            font-size: 1rem;
             font-family: $fontShamelBold;
-            padding-bottom: 0;
-            padding-top: 0;
-            height: 58px;
-            line-height: 58px
+            padding-bottom: 8px;
+            padding-top: 12px;
         }
-
+        
+        @media (min-width: 1400px) {
+            background-size: 100% 75%;
+        }
+        @media (min-width: 1600px) {
+//            background-size: 100% 70%;
+        }
+        @media (min-width: 1800px) {
+            background-size: 100% 75%;
+        }
+        @media (min-width: 1900px) {
+//            background-size: 100% 60%;
+        }
         @media (max-width: 991.98px) {
             background-image: url(../images/maqraa/M-M-BG.jpg);
+            background-size: 100% 70%
         }
 
         @media (min-width: 576px) and (max-width: 767.98px) {
 
+            .for-desktop{
+                width: 500px
+            }
             .register-opened,
             .register-closed {
-                margin-top: 190px;
+                margin-top: 165px;
             }
 
             .register-opened .text1,
@@ -1257,12 +1291,26 @@ padding: 1.2rem 0;
 
             .register-opened,
             .register-closed {
-                margin-top: 200px;
+                margin-top: 130px;
             }
 
             .register-opened .text1,
             .register-closed .text1 {
-                width: 300px
+                width: 250px;
+                font-size: .9rem;
+            }
+
+            .register-opened .text2,
+            .register-closed .text2 {
+                margin-bottom: 30px;
+                font-size: 1.2rem;
+            }
+            .register-form-link {
+                width: 200px;
+                font-size: .8rem;
+            }
+            .countdown {
+                font-size: 1.7rem;
             }
         }
     }
@@ -1270,12 +1318,17 @@ padding: 1.2rem 0;
 
 
     #description {
-        background-image: url(../images/maqraa/M_3ndS_Road.svg), url(../images/maqraa/M_3ndS_BG%20left%20illustration.svg), url(../images/maqraa/M_3ndS_BG%20right%20illustration.svg), url(../images/maqraa/M_3ndS_BG.svg);
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position: 190px 200px, left, right, top;
-
+        background: transparent linear-gradient(180deg, #48315A 0%, #C3AC72 83%, #EEEEEE 100%) 0% 0% no-repeat padding-box;
         //        padding-bottom: 0;
+        .background-overlay{
+            
+                background-image: url(../images/maqraa/M_3ndS_Road.svg), url(../images/maqraa/M_3ndS_BG%20left%20illustration.svg), url(../images/maqraa/M_3ndS_BG%20right%20illustration.svg); //url(../images/maqraa/M_3ndS_BG.svg);
+            background-size: auto;
+            background-repeat: no-repeat;
+            //        background-position: 190px 200px, left, right, top;
+            background-position: center , left, right;
+
+        }
         header h2 {
             color: #fff
         }
@@ -1287,12 +1340,13 @@ padding: 1.2rem 0;
             border-radius: 0;
             border: none;
             box-shadow: 0 30px 99px rgba(255, 255, 255, 0.11);
-            margin-bottom: 65px;
+//            margin-bottom: 65px;
+            margin-bottom: 85px;
             padding-bottom: 40px;
 
             .card-title {
-                color: #471280;
-                font-size: 2rem;
+                color: #3C2A4A;
+                font-size: 1.4rem;
                 font-family: $fontShamelBold;
                 margin-bottom: 30px;
                 margin-top: 30px;
@@ -1327,14 +1381,14 @@ padding: 1.2rem 0;
             .card-title {
                 color: #878787;
                 font-size: 1.5rem;
-                font-family: $fontNotoRegular;
+                font-family: $fontTextBold;
                 margin: 0;
                 margin-bottom: 40px;
             }
 
             .card-text {
                 color: #A2A2A2;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-family: $fontShamelBold;
             }
         }
@@ -1344,7 +1398,8 @@ padding: 1.2rem 0;
         }
 
         .desc-img {
-            position: absolute
+            position: absolute;
+            max-width: 100%
         }
 
         #desc-img1 {
@@ -1376,19 +1431,35 @@ padding: 1.2rem 0;
             top: 70px;
             width: 320px
         }
-
+        @media (max-width: 1199.98px) {
+            .background-overlay{
+                background-image: none
+            }
+            }
         @media (max-width: 991.98px) {
-            background-image: url(../images/maqraa/M_3ndS_BG.svg);
-            background-size: cover;
-            background-position: top;
-
+            .background-overlay{
+            background-image: none
+            }
             .desc-img {
                 position: relative;
                 right: auto !important;
                 left: auto !important;
                 top: auto !important;
                 bottom: auto !important;
-                margin-bottom: 50px;
+                margin-bottom: -15px;
+            }
+            #desc-img1,#desc-img2{
+                width: 210px
+            }
+            #desc-img3{
+                width: 190px
+            }
+            #desc-img4,#desc-img5{
+                width: 260px
+            }
+            .certificate-img{
+                width: 150% !important;
+                margin-left: -25%
             }
         }
     }
@@ -1461,9 +1532,14 @@ padding: 1.2rem 0;
 }
 #maqraa-page #services{
     background-position:0 -100px;
+    padding-bottom: 80px;
+    
     .card {
         padding-top: 30px;
         padding-bottom: 20px
+    }
+    @media (max-width: 575.98px) {
+        background-image: none;
     }
 }
 #jazariah-page, .course-page {
@@ -2854,4 +2930,66 @@ padding: 1.2rem 0;
         }
     }
     
+}
+
+#success-modal{
+    .title{
+        color: #509863;
+        direction: rtl;
+        font-family: $fontShamelBold
+    }
+    .text{
+        color: #545454;
+        font-family: $fontNotoRegular
+    }
+}
+#success-modal,
+#error-modal {
+    .modal-content {
+        border-radius: 0;
+        border-color: #fff
+    }
+
+    .modal-header {
+        border: none;
+
+        img {
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        #error-icon {
+            margin-top: -80px;
+        }
+
+        #success-icon {
+            margin-top: -66px;
+        }
+    }
+
+    .title {
+        font-family: $fontTajawalBlack;
+        font-size: 20px
+    }
+
+    .text {
+        font-family: $fontNotoRegular;
+        font-size: 16px
+    }
+
+    .modal-footer {
+        border: none;
+        justify-content: center
+    }
+
+    a[role="button"] {
+        border: 2px solid #3C2A4A;
+        border-radius: 2em;
+        color: #3C2A4A;
+        background-color: transparent;
+        //            width: 150px;
+        max-width: 100%;
+//        font-family: $fontTajawalExtraBold;
+        font-size: 20px
+    }
 }
