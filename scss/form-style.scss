@@ -11,6 +11,14 @@ $fontNotoSemiBold: "NotoSansArabic-SemiBold",
 sans-serif;
 $fontShamelBold: "FFShamelFamilySansOne-Bold",
 sans-serif;
+$fontTitleRegular: "Dubai-Regular",
+    sans-serif;
+$fontTitleBold: "Dubai-Bold",
+    sans-serif;
+$fontTextRegular: "KFGQPC-Regular",
+    sans-serif;
+$fontTextBold: "KFGQPC-Bold",
+    sans-serif;
 
 @font-face {
     font-family: "NotoSansArabic-Regular";
@@ -41,7 +49,22 @@ sans-serif;
     font-family: "FFShamelFamilySansOne-Bold";
     src: url("../fonts/FFShamelFamilySansOne-Bold.ttf");
 }
-
+@font-face {
+    font-family: "KFGQPC-Regular";
+    src: url("../fonts/KFGQPC-UthmanTahaNaskh-Regular.ttf");
+}
+@font-face {
+    font-family: "KFGQPC-Bold";
+    src: url("../fonts/KFGQPC-UthmanTahaNaskh-Bold.ttf");
+}
+@font-face {
+    font-family: "Dubai-Regular";
+    src: url("../fonts/Dubai-Regular.ttf");
+}
+@font-face {
+    font-family: "Dubai-Bold";
+    src: url("../fonts/Dubai-Bold.ttf");
+}
 /*Main Rules*/
 //html,
 //body {
@@ -58,7 +81,7 @@ sans-serif;
 //}
 
 #register-page {
-    font-family: $fontNotoRegular;
+    font-family: $fontTextRegular;
     font-size: 18px;
     color: #3C2A4A;
     /*for arabic site*/
@@ -311,7 +334,7 @@ sans-serif;
     .SumoSelect > .optWrapper > .options li.opt label {
         margin-bottom: 0;
         color: #393939;
-        font-family: $fontNotoRegular;
+        font-family: $fontTitleRegular;
         font-size: .9rem;
         line-height: 1.6;
     }
@@ -473,24 +496,25 @@ footer {
         margin-bottom: 60px;
 
         .title {
-            font-family: $fontShamelBold;
+            font-family: $fontTitleBold;
             font-size: 1.6rem;
+            margin-bottom: 17px
         }
 
         .course {
-            font-size: 1rem;
-            margin-bottom: 60px
+            font-size: 1.1rem;
+            margin-bottom: 40px
         }
 
         .details {
-            font-family: $fontShamelBold;
+            font-family: $fontTitleBold;
             font-size: 1.2rem;
             margin-bottom: 18px;
             direction: rtl
         }
 
         .star-note {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
 
@@ -499,7 +523,7 @@ footer {
         font-size: 13px;
 
         .title {
-            font-family: $fontShamelBold;
+            font-family: $fontTitleBold;
             font-size: 1.2rem;
         }
     }
@@ -527,12 +551,12 @@ footer {
     .name-example {
         color: #c8c8c8;
         font-size: .9rem;
-        font-family: $fontNotoRegular
+//        font-family: $fontNotoRegular
     }
 
     .name-note {
         font-size: .9rem;
-        font-family: $fontNotoRegular
+//        font-family: $fontNotoRegular
     }
 
     form {
@@ -541,18 +565,18 @@ footer {
         }
 
         label {
-            font-family: $fontShamelBold;
+            font-family: $fontTitleBold;
             font-size: .9rem;
             color: #471280
         }
 
         .form-check-label {
-            font-family: $fontNotoRegular;
+            font-family: $fontTitleRegular;
             color: #3C2A4A
         }
 
         .accept-label {
-            font-family: $fontNotoSemiBold
+            font-family: $fontTitleBold
         }
 
     }
@@ -618,16 +642,21 @@ footer {
         box-shadow: 0 10px 18px #D8B56661;
         width: 330px;
         max-width: 100%;
-        height: 63px;
+//        height: 63px;
         border-color: transparent;
         //        font-family: $fontTajawalExtraBold;
-        font-family: $fontShamelBold;
-        padding-bottom: 0px;
+        font-family: $fontTitleBold;
+        padding-top: 10px;
+        padding-bottom: 10px;
         border-radius: 0px;
         font-size: 20px;
         margin-top: 30px;
         //        margin-bottom: 25px;
-        color: #fff
+        color: #fff;
+        &:hover{
+            background: linear-gradient(276deg, #A98C4B 0%, #A98C4B 100%);
+//            background-color: #A98C4B
+        }
     }
 
     .phone-match-note {
@@ -644,7 +673,8 @@ footer {
         padding-right: 15px;
         margin-left: auto;
         margin-top: 38px;
-        overflow-y: scroll
+        overflow-y: scroll;
+        font-size: .9rem;
     }
 
     .policies-line {
@@ -657,13 +687,8 @@ footer {
     #success-modal{
         .title{
             color: #509863;
-            direction: rtl;
-            font-family: $fontShamelBold
         }
-        .text{
-            color: #545454;
-            font-family: $fontNotoRegular
-        }
+        
     }
     #success-modal,
     #error-modal {
@@ -690,13 +715,15 @@ footer {
         }
 
         .title {
-            font-family: $fontTajawalBlack;
-            font-size: 20px
+            font-family: $fontTitleBold;
+            font-size: 1.2rem;
+            direction: rtl;
         }
 
         .text {
-            font-family: $fontNotoRegular;
-            font-size: 16px
+            font-family: $fontTitleRegular;
+            font-size: 1.1rem;
+            color: #545454;
         }
 
         .modal-footer {
@@ -709,10 +736,10 @@ footer {
             border-radius: 2em;
             color: #3C2A4A;
             background-color: transparent;
-//            width: 150px;
             max-width: 100%;
-            font-family: $fontTajawalExtraBold;
-            font-size: 20px
+            font-family: $fontTitleBold;
+            font-size: 1rem;
+            padding: 5px 25px
         }
     }
 

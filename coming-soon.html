@@ -25,16 +25,17 @@
         #coming-soon-page {
             /*        min-height: calc(100vh - 81px);*/
             min-height: 100vh;
-            background-image: url(images/coming-soon/laptop.png), url(images/coming-soon/BG.png);
+            background-image: url(images/coming-soon/laptop_new.png), url(images/coming-soon/BG.png);
             /*        background-image: url(images/coming-soon/bg.png);*/
             background-size: cover, cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center 120%, center;
             padding: 0 30px
         }
 
         img {
             margin: auto;
+/*            width: 100px;*/
             max-width: 100%
         }
 
@@ -45,11 +46,12 @@
         @media (max-width: 575.98px) {
             #coming-soon-page {
                 background-size: 800px, cover;
+                background-position: center 50%, center;
 /*                background-position: bottom, center;*/
 
             }
             #text-img {
-                width: 70%
+/*                width: 70%*/
             }
         }
     </style>
@@ -62,7 +64,7 @@
 -->
     <main id="coming-soon-page" class="text-center">
         <div id="img-wrapper">
-            <img id="text-img" src="images/coming-soon/text.png" alt="موقع ألف لام ميم بحلّته الجديدة قريباً">
+            <img id="text-img" src="images/coming-soon/soon.png" alt="قريباً">
         </div>
 
     </main>

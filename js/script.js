@@ -108,7 +108,7 @@ $(function () {
     if ($('#courses-slider').length > 0) {
         //slick slider
         $('#courses-slider').slick({
-            dots: true,
+            dots: false,
             infinite: true,
             rtl: true,
             speed: 300,
