@@ -140,9 +140,8 @@ body {
 border: none;
     &:hover {
         color: #fff;
-        &:hover{
-            background: linear-gradient(0deg, #A98C4B 0%, #A98C4B 100%);
-        }
+        background: #A98C4B;
+        background: linear-gradient(103deg, #A98C4B 0%, #A98C4B 100%);
     }
 }
 
@@ -1749,7 +1748,8 @@ padding-top: 40px;
             }
 
             .course-description {
-                margin-top: 350px;
+//                margin-top: 350px;
+                margin-top: 220px;
                 margin-bottom: 100px;
 
                 .text {
@@ -2125,13 +2125,24 @@ padding-top: 40px;
                         background: transparent linear-gradient(180deg, rgba(72, 49, 90, .0) 10%,rgba(72, 49, 90, .9) 80%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
            
         }
-        
-        @media (max-width: 575.98px) {
-            background-image: url(../images/hadeeth40/Nawawie-header-phone.jpg);
-            
+        @media (max-width: 991.98px) {
+//            background-image: url(../images/hadeeth40/Nawawie-header-phone.jpg);
+            background-position: 87% -456px;
+
             #faded-div {
                 height: 100%;
-                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 26%, rgba(72, 49, 90, .9) 38%, rgba(72, 49, 90, 1) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+                //                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 26%, rgba(72, 49, 90, .9) 38%, rgba(72, 49, 90, 1) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 25%, rgba(72, 49, 90, .9) 33%, rgba(72, 49, 90, 1) 38%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+                //                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 30vh, rgba(72, 49, 90, .5) 40vh, rgba(72, 49, 90, 1) 50vh, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+        @media (max-width: 575.98px) {
+            background-image: url(../images/hadeeth40/Nawawie-header-phone.jpg);
+            background-position: center top;
+            #faded-div {
+                height: 100%;
+//                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 26%, rgba(72, 49, 90, .9) 38%, rgba(72, 49, 90, 1) 50%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
+                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 24%, rgba(72, 49, 90, .9) 30%, rgba(72, 49, 90, 1) 38%, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
 //                background: transparent linear-gradient(180deg, rgba(72, 49, 90, 0) 30vh, rgba(72, 49, 90, .5) 40vh, rgba(72, 49, 90, 1) 50vh, rgba(72, 49, 90, 1) 100%) 0% 0% no-repeat padding-box;
             }
         }
@@ -2479,23 +2490,23 @@ padding-top: 40px;
         }
 
     }
-
+    
     .show-more {
         width: 180px;
         max-width: 100%;
         font-size: 1.3rem;
         font-family: $fontTitleBold;
-//        margin-top: 80px;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
         border-radius: 0;
-        padding-bottom: .3rem;
-        padding-top: .3rem;
         border: none;
+        padding-bottom: 10px;
+        padding-top: 10px;
         
-        &:hover {
-            background: #A98C4B;
-            background: linear-gradient(103deg, #A98C4B 0%, #A98C4B 100%);
-        }
+//        &:hover {
+//            background: #A98C4B;
+//            background: linear-gradient(103deg, #A98C4B 0%, #A98C4B 100%);
+//        }
     }
     #card1 {
         //        background: transparent linear-gradient(0deg, rgba(53, 56, 70, 1) 0%, rgba(11, 11, 14, 1) 100%) 0% 0% no-repeat padding-box;
